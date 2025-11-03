@@ -1,0 +1,214 @@
+build:
+  maxIssues: -1  # Sınırsız - tüm sorunları raporla
+  excludeCorrectable: false
+  weights: {}  # Ağırlıklandırma yapma
+
+config:
+  validation: true
+  warningsAsErrors: false
+
+# ═══════════════════════════════════════════════════════
+# COMPLEXITY METRICS (En önemli bölüm)
+# ═══════════════════════════════════════════════════════
+complexity:
+  active: true
+
+  # Cyclomatic Complexity - McCabe metriği
+  CyclomaticComplexMethod:
+    active: true
+    threshold: 0  # ✅ Her fonksiyonun gerçek complexity'sini görmek için
+    ignoreSingleWhenExpression: false
+    ignoreSimpleWhenEntries: false
+    ignoreNestingFunctions: false
+
+  # Cognitive Complexity - Anlaşılabilirlik
+  CognitiveComplexMethod:
+    active: true
+    threshold: 100  # ✅ Yüksek threshold
+
+  # Method Length - LOC per method
+  LongMethod:
+    active: true
+    threshold: 200  # ✅ Yüksek threshold
+
+  # Parameter Count
+  LongParameterList:
+    active: true
+    functionThreshold: 20
+    constructorThreshold: 20
+    ignoreDefaultParameters: false  # Tüm parametreleri say
+    ignoreDataClasses: false  # Data class'ları da say
+
+  # Class Size
+  LargeClass:
+    active: true
+    threshold: 1000  # ✅ Yüksek threshold
+
+  # Function Count per Class
+  TooManyFunctions:
+    active: true
+    thresholdInFiles: 100
+    thresholdInClasses: 100
+    thresholdInInterfaces: 50
+    thresholdInObjects: 50
+    thresholdInEnums: 50
+    ignoreDeprecated: false
+    ignorePrivate: false
+    ignoreOverridden: false
+
+  # Nesting Depth
+  NestedBlockDepth:
+    active: true
+    threshold: 10  # ✅ Yüksek threshold
+
+  # Complex Conditions
+  ComplexCondition:
+    active: true
+    threshold: 10
+
+  # String Duplication (Code Reuse göstergesi)
+  StringLiteralDuplication:
+    active: true
+    threshold: 2
+    ignoreAnnotation: false
+    excludeStringsWithLessThan5Characters: false
+
+  # Complex Interfaces
+  ComplexInterface:
+    active: true
+    threshold: 20
+    includeStaticDeclarations: true
+    includePrivateDeclarations: true
+
+# ═══════════════════════════════════════════════════════
+# COUPLING & COHESION
+# ═══════════════════════════════════════════════════════
+style:
+  active: true
+
+  # Unused code - Dead code detection
+  UnusedPrivateMember:
+    active: true
+    allowedNames: ''
+
+  UnusedPrivateClass:
+    active: true
+
+  UnusedParameter:
+    active: true
+    allowedNames: ''
+
+  # Data Class kullanımı - Immutability
+  DataClassShouldBeImmutable:
+    active: true
+
+  # Return statement sayısı - Method karmaşıklığı
+  ReturnCount:
+    active: true
+    max: 20
+    excludedFunctions: []
+    excludeLabeled: false
+    excludeReturnFromLambda: false
+    excludeGuardClauses: false
+
+  # Magic Numbers
+  MagicNumber:
+    active: true
+    ignoreNumbers: []
+    ignoreHashCodeFunction: false
+    ignorePropertyDeclaration: false
+    ignoreLocalVariableDeclaration: false
+    ignoreConstantDeclaration: false
+    ignoreCompanionObjectPropertyDeclaration: false
+    ignoreAnnotation: false
+    ignoreNamedArgument: false
+    ignoreEnums: false
+    ignoreRanges: false
+    ignoreExtensionFunctions: false
+
+# ═══════════════════════════════════════════════════════
+# CODE QUALITY INDICATORS
+# ═══════════════════════════════════════════════════════
+potential-bugs:
+  active: true
+
+  # Null safety issues
+  UnsafeCallOnNullableType:
+    active: true
+
+  UnsafeCast:
+    active: true
+
+  # Mutable collections
+  DoubleMutabilityForCollection:
+    active: true
+
+exceptions:
+  active: true
+
+  # Exception handling quality
+  TooGenericExceptionCaught:
+    active: true
+    exceptionNames:
+      - 'Exception'
+      - 'Throwable'
+      - 'RuntimeException'
+
+  SwallowedException:
+    active: true
+
+# ═══════════════════════════════════════════════════════
+# COROUTINES USAGE
+# ═══════════════════════════════════════════════════════
+coroutines:
+  active: true
+
+  GlobalCoroutineUsage:
+    active: true
+
+  SuspendFunWithFlowReturnType:
+    active: true
+
+# ═══════════════════════════════════════════════════════
+# NAMING CONVENTIONS
+# ═══════════════════════════════════════════════════════
+naming:
+  active: true
+
+  ClassNaming:
+    active: true
+
+  FunctionNaming:
+    active: true
+
+  VariableNaming:
+    active: true
+
+# ═══════════════════════════════════════════════════════
+# PERFORMANCE
+# ═══════════════════════════════════════════════════════
+performance:
+  active: true
+
+  ForEachOnRange:
+    active: true
+
+  SpreadOperator:
+    active: true
+
+  UnnecessaryTemporaryInstantiation:
+    active: true
+
+# ═══════════════════════════════════════════════════════
+# EMPTY BLOCKS
+# ═══════════════════════════════════════════════════════
+empty-blocks:
+  active: true
+
+  EmptyCatchBlock:
+    active: true
+    allowedExceptionNameRegex: ''
+
+  EmptyFunctionBlock:
+    active: true
+    ignoreOverridden: false

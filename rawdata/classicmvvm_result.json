@@ -1,0 +1,1181 @@
+{
+    "context": {
+        "build": {
+            "brand": "samsung",
+            "device": "a55x",
+            "fingerprint": "samsung/a55xnstur/a55x:15/AP3A.240905.015.A2/A556EXXSABYI3:user/release-keys",
+            "id": "AP3A.240905.015.A2",
+            "model": "SM-A556E",
+            "type": "user",
+            "version": {
+                "codename": "REL",
+                "sdk": 35
+            },
+            "architecture": "classicmvvm"
+        },
+        "cpuCoreCount": 8,
+        "cpuLocked": false,
+        "cpuMaxFreqHz": 2750000000,
+        "memTotalBytes": 7793700864,
+        "sustainedPerformanceModeEnabled": false,
+        "artMainlineVersion": 360910040,
+        "osCodenameAbbreviated": "A",
+        "compilationMode": "verify"
+    },
+    "benchmarks": [
+        {
+            "name": "startupCold",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.startup.StartupBenchmark",
+            "totalRunTimeNs": 91160123359,
+            "metrics": {
+                "timeToInitialDisplayMs": {
+                    "minimum": 505.812148,
+                    "maximum": 550.627109,
+                    "median": 519.914336,
+                    "runs": [
+                        508.964219,
+                        531.887656,
+                        513.691484,
+                        514.969688,
+                        505.812148,
+                        518.426368,
+                        519.914336,
+                        519.51,
+                        530.723008,
+                        520.17207,
+                        529.570742,
+                        515.092773,
+                        534.551563,
+                        550.627109,
+                        521.370781
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 0,
+            "repeatIterations": 15,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "startupWarm",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.startup.StartupBenchmark",
+            "totalRunTimeNs": 66212526172,
+            "metrics": {
+                "timeToInitialDisplayMs": {
+                    "minimum": 83.533203,
+                    "maximum": 115.057461,
+                    "median": 102.167461,
+                    "runs": [
+                        115.057461,
+                        102.47293,
+                        88.39375,
+                        88.614531,
+                        96.704571,
+                        102.167461,
+                        112.096563,
+                        83.955508,
+                        110.174258,
+                        104.213555,
+                        95.07332,
+                        86.241523,
+                        106.491445,
+                        83.533203,
+                        110.162617
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 0,
+            "repeatIterations": 15,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "productListScrollAndPagination",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.ProductListScrollBenchmark",
+            "totalRunTimeNs": 364579808711,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 1837.0,
+                    "maximum": 2148.0,
+                    "median": 1921.0,
+                    "runs": [
+                        2070.0,
+                        1921.0,
+                        1837.0,
+                        1901.0,
+                        2148.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 8.193282,
+                    "P90": 14.9469766,
+                    "P95": 15.675874999999998,
+                    "P99": 17.96901724
+                },
+                "frameOverrunMs": {
+                    "P50": 3.745646,
+                    "P90": 11.8022058,
+                    "P95": 12.495491599999976,
+                    "P99": 15.576675719999994
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "productListRapidScrolling",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.ProductListScrollBenchmark",
+            "totalRunTimeNs": 708703914218,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 3873.0,
+                    "maximum": 4320.0,
+                    "median": 4210.0,
+                    "runs": [
+                        4320.0,
+                        3873.0,
+                        4210.0,
+                        3900.0,
+                        4301.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 9.136425500000001,
+                    "P90": 14.9411089,
+                    "P95": 15.5246225,
+                    "P99": 17.68148344000001
+                },
+                "frameOverrunMs": {
+                    "P50": 4.452093,
+                    "P90": 11.7830465,
+                    "P95": 11.98139395,
+                    "P99": 15.649469840000014
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "productListCategoryFiltering",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.ProductListScrollBenchmark",
+            "totalRunTimeNs": 1327114029063,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 6861.0,
+                    "maximum": 7273.0,
+                    "median": 7175.0,
+                    "runs": [
+                        7175.0,
+                        7192.0,
+                        7113.0,
+                        6861.0,
+                        7273.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 7.3568359999999995,
+                    "P90": 15.0823713,
+                    "P95": 15.841831449999999,
+                    "P99": 18.42446323000001
+                },
+                "frameOverrunMs": {
+                    "P50": 3.54053,
+                    "P90": 11.8443264,
+                    "P95": 13.418277349999999,
+                    "P99": 19.75737195
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "cartQuantityUpdatesWithDynamicSetup",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.CartInteractionBenchmark",
+            "totalRunTimeNs": 781808133164,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 466.0,
+                    "maximum": 481.0,
+                    "median": 471.0,
+                    "runs": [
+                        471.0,
+                        481.0,
+                        481.0,
+                        466.0,
+                        468.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 7.269414,
+                    "P90": 14.2333748,
+                    "P95": 15.354617699999999,
+                    "P99": 19.201874660000012
+                },
+                "frameOverrunMs": {
+                    "P50": 5.358503,
+                    "P90": 12.4043006,
+                    "P95": 13.9714828,
+                    "P99": 16.24791456000002
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "cartCheckoutFlow",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.CartInteractionBenchmark",
+            "totalRunTimeNs": 678154590781,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 1222.0,
+                    "maximum": 1237.0,
+                    "median": 1229.0,
+                    "runs": [
+                        1229.0,
+                        1223.0,
+                        1237.0,
+                        1222.0,
+                        1232.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 9.113516,
+                    "P90": 15.1985314,
+                    "P95": 16.099343899999997,
+                    "P99": 20.73534292
+                },
+                "frameOverrunMs": {
+                    "P50": 4.425503,
+                    "P90": 12.512177600000001,
+                    "P95": 13.093886799999996,
+                    "P99": 22.684784799999996
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "chatListRealtimeUpdates",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.ChatStreamBenchmark",
+            "totalRunTimeNs": 473637694882,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 1959.0,
+                    "maximum": 2194.0,
+                    "median": 2120.0,
+                    "runs": [
+                        2072.0,
+                        2194.0,
+                        2120.0,
+                        1959.0,
+                        2121.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 9.5299415,
+                    "P90": 14.62584,
+                    "P95": 15.355702999999998,
+                    "P99": 22.006093550000095
+                },
+                "frameOverrunMs": {
+                    "P50": 5.128147500000001,
+                    "P90": 12.1806295,
+                    "P95": 12.314319249999999,
+                    "P99": 19.372537550000146
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "chatDetailMessageStreamAndSending",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.ChatStreamBenchmark",
+            "totalRunTimeNs": 183011316289,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 940.0,
+                    "maximum": 976.0,
+                    "median": 963.0,
+                    "runs": [
+                        940.0,
+                        976.0,
+                        954.0,
+                        963.0,
+                        965.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 12.997168,
+                    "P90": 20.5850663,
+                    "P95": 24.626698949999987,
+                    "P99": 42.206495239999974
+                },
+                "frameOverrunMs": {
+                    "P50": 9.720349,
+                    "P90": 20.2287335,
+                    "P95": 23.071186249999986,
+                    "P99": 37.96209802999997
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0,
+            "profilerOutputs": [
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace Iteration 0",
+                    "filename": "ChatStreamBenchmark_chatDetailMessageStreamAndSending_iter000_2025-10-24-01-24-03.perfetto-trace"
+                },
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace Iteration 1",
+                    "filename": "ChatStreamBenchmark_chatDetailMessageStreamAndSending_iter001_2025-10-24-01-24-33.perfetto-trace"
+                },
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace Iteration 2",
+                    "filename": "ChatStreamBenchmark_chatDetailMessageStreamAndSending_iter002_2025-10-24-01-25-03.perfetto-trace"
+                },
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace Iteration 3",
+                    "filename": "ChatStreamBenchmark_chatDetailMessageStreamAndSending_iter003_2025-10-24-01-25-33.perfetto-trace"
+                },
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace Iteration 4",
+                    "filename": "ChatStreamBenchmark_chatDetailMessageStreamAndSending_iter004_2025-10-24-01-26-03.perfetto-trace"
+                }
+            ]
+        },
+        {
+            "name": "chatRapidSwitching",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.ChatStreamBenchmark",
+            "totalRunTimeNs": 799900503125,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 5302.0,
+                    "maximum": 5359.0,
+                    "median": 5318.0,
+                    "runs": [
+                        5302.0,
+                        5359.0,
+                        5318.0,
+                        5354.0,
+                        5311.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 9.733047,
+                    "P90": 18.367921900000002,
+                    "P95": 20.482888449999997,
+                    "P99": 34.54992492999999
+                },
+                "frameOverrunMs": {
+                    "P50": 6.622336,
+                    "P90": 19.5194812,
+                    "P95": 22.114514949999993,
+                    "P99": 36.62321059999999
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "continuousScrollJankTest",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.JankMetricBenchmark",
+            "totalRunTimeNs": 159475212930,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 347.0,
+                    "maximum": 391.0,
+                    "median": 350.0,
+                    "runs": [
+                        391.0,
+                        350.0,
+                        349.0,
+                        386.0,
+                        347.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 8.367305,
+                    "P90": 15.7193128,
+                    "P95": 17.83658539999999,
+                    "P99": 23.170417339999993
+                },
+                "frameOverrunMs": {
+                    "P50": 4.568197,
+                    "P90": 13.5949362,
+                    "P95": 15.229043999999998,
+                    "P99": 20.250307739999993
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "flingJankTest",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.JankMetricBenchmark",
+            "totalRunTimeNs": 735671092930,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 3989.0,
+                    "maximum": 4240.0,
+                    "median": 4064.0,
+                    "runs": [
+                        4240.0,
+                        4064.0,
+                        4018.0,
+                        3989.0,
+                        4222.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 7.284453,
+                    "P90": 14.774156399999999,
+                    "P95": 15.3342268,
+                    "P99": 17.424462200000008
+                },
+                "frameOverrunMs": {
+                    "P50": 3.514137,
+                    "P90": 11.7831294,
+                    "P95": 11.9253362,
+                    "P99": 15.244490280000004
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "rapidDirectionChangeJankTest",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.rendering.JankMetricBenchmark",
+            "totalRunTimeNs": 145710481485,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 350.0,
+                    "maximum": 412.0,
+                    "median": 358.0,
+                    "runs": [
+                        412.0,
+                        358.0,
+                        356.0,
+                        350.0,
+                        364.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 7.641172,
+                    "P90": 15.3019257,
+                    "P95": 17.5103029,
+                    "P99": 23.704574859999987
+                },
+                "frameOverrunMs": {
+                    "P50": 3.3983350000000003,
+                    "P90": 11.8648301,
+                    "P95": 15.119208099999998,
+                    "P99": 21.921566339999977
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "cartQuantityUpdatePerformance",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.interaction.StateUpdateBenchmark",
+            "totalRunTimeNs": 77878966016,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 58.0,
+                    "maximum": 67.0,
+                    "median": 62.0,
+                    "runs": [
+                        60.0,
+                        62.0,
+                        58.0,
+                        65.0,
+                        67.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 10.327168,
+                    "P90": 12.105696100000001,
+                    "P95": 12.7624785,
+                    "P99": 17.97106620999997
+                },
+                "frameOverrunMs": {
+                    "P50": 11.9281715,
+                    "P90": 13.701872,
+                    "P95": 13.9774536,
+                    "P99": 14.22155551
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        },
+        {
+            "name": "categoryFilterPerformance",
+            "params": {},
+            "className": "com.yfy.basearchitecture.benchmark.interaction.StateUpdateBenchmark",
+            "totalRunTimeNs": 47117665508,
+            "metrics": {
+                "frameCount": {
+                    "minimum": 29.0,
+                    "maximum": 33.0,
+                    "median": 31.0,
+                    "runs": [
+                        33.0,
+                        29.0,
+                        30.0,
+                        31.0,
+                        32.0
+                    ]
+                }
+            },
+            "sampledMetrics": {
+                "frameDurationCpuMs": {
+                    "P50": 8.058867,
+                    "P90": 28.0281716,
+                    "P95": 30.595078099999995,
+                    "P99": 36.80495594000001
+                },
+                "frameOverrunMs": {
+                    "P50": 13.110108,
+                    "P90": 29.001679399999997,
+                    "P95": 30.321167,
+                    "P99": 37.37567576000001
+                }
+            },
+            "warmupIterations": 0,
+            "repeatIterations": 5,
+            "thermalThrottleSleepSeconds": 0
+        }
+    ],
+    "memoryBenchmarkResult": [
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "Timestamp",
+    "01_AppLaunch": 1761270686994,
+    "02_ProductList_Initial": 1761270687270,
+    "03_ProductList_AfterHeavyScroll": 1761270741789,
+    "04_ProductDetail": 1761270797536,
+    "05_Cart_Initial": 1761270800147,
+    "06_Cart_AfterRapidUpdates": 1761270806960,
+    "07_ChatList": 1761270809794,
+    "08_ChatDetail_Initial": 1761270810944,
+    "09_ChatDetail_AfterStream": 1761270826230,
+    "10_Peak_AfterAllOperations": 1761270830197,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": 40,
+    "# Peak_PSS_MB: 38": "42 (06_Cart_AfterRapidUpdates)",
+    "# Final_PSS_MB: 30": 95,
+    "# Growth_MB: 0": 55,
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "Initial_MB",
+    "# classicmvvm": 30
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "TotalPSS_MB",
+    "01_AppLaunch": 30,
+    "02_ProductList_Initial": 30,
+    "03_ProductList_AfterHeavyScroll": 30,
+    "04_ProductDetail": 30,
+    "05_Cart_Initial": 30,
+    "06_Cart_AfterRapidUpdates": 38,
+    "07_ChatList": 30,
+    "08_ChatDetail_Initial": 31,
+    "09_ChatDetail_AfterStream": 30,
+    "10_Peak_AfterAllOperations": 30,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "Peak_MB",
+    "# classicmvvm": 40
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "PrivateDirty_MB",
+    "01_AppLaunch": 40,
+    "02_ProductList_Initial": 37,
+    "03_ProductList_AfterHeavyScroll": 70,
+    "04_ProductDetail": 35,
+    "05_Cart_Initial": 39,
+    "06_Cart_AfterRapidUpdates": 42,
+    "07_ChatList": 69,
+    "08_ChatDetail_Initial": "03",
+    "09_ChatDetail_AfterStream": 95,
+    "10_Peak_AfterAllOperations": 95,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "Final_MB",
+    "# classicmvvm": 38
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "SharedDirty_MB",
+    "01_AppLaunch": 21,
+    "02_ProductList_Initial": 21,
+    "03_ProductList_AfterHeavyScroll": 22,
+    "04_ProductDetail": 21,
+    "05_Cart_Initial": 21,
+    "06_Cart_AfterRapidUpdates": 29,
+    "07_ChatList": 21,
+    "08_ChatDetail_Initial": 22,
+    "09_ChatDetail_AfterStream": 22,
+    "10_Peak_AfterAllOperations": 22,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "Growth_MB",
+    "# classicmvvm": 42
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "NativeHeap_MB",
+    "01_AppLaunch": 69,
+    "02_ProductList_Initial": 66,
+    "03_ProductList_AfterHeavyScroll": "00",
+    "04_ProductDetail": 65,
+    "05_Cart_Initial": 69,
+    "06_Cart_AfterRapidUpdates": 71,
+    "07_ChatList": 98,
+    "08_ChatDetail_Initial": 32,
+    "09_ChatDetail_AfterStream": 24,
+    "10_Peak_AfterAllOperations": 24,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": 30
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "DalvikHeap_MB",
+    "01_AppLaunch": 5,
+    "02_ProductList_Initial": 5,
+    "03_ProductList_AfterHeavyScroll": 5,
+    "04_ProductDetail": 5,
+    "05_Cart_Initial": 5,
+    "06_Cart_AfterRapidUpdates": 5,
+    "07_ChatList": 5,
+    "08_ChatDetail_Initial": 5,
+    "09_ChatDetail_AfterStream": 5,
+    "10_Peak_AfterAllOperations": 5,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": 95
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "UsedMemory_MB",
+    "01_AppLaunch": 72,
+    "02_ProductList_Initial": 72,
+    "03_ProductList_AfterHeavyScroll": 72,
+    "04_ProductDetail": 72,
+    "05_Cart_Initial": 72,
+    "06_Cart_AfterRapidUpdates": 72,
+    "07_ChatList": 72,
+    "08_ChatDetail_Initial": 72,
+    "09_ChatDetail_AfterStream": 72,
+    "10_Peak_AfterAllOperations": 72,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": 0
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "TotalMemory_MB",
+    "01_AppLaunch": 13,
+    "02_ProductList_Initial": 13,
+    "03_ProductList_AfterHeavyScroll": 13,
+    "04_ProductDetail": 13,
+    "05_Cart_Initial": 13,
+    "06_Cart_AfterRapidUpdates": 20,
+    "07_ChatList": 13,
+    "08_ChatDetail_Initial": 14,
+    "09_ChatDetail_AfterStream": 14,
+    "10_Peak_AfterAllOperations": 14,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": 55
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "MaxMemory_MB",
+    "01_AppLaunch": 47,
+    "02_ProductList_Initial": 47,
+    "03_ProductList_AfterHeavyScroll": 79,
+    "04_ProductDetail": 45,
+    "05_Cart_Initial": 47,
+    "06_Cart_AfterRapidUpdates": 15,
+    "07_ChatList": 77,
+    "08_ChatDetail_Initial": "05",
+    "09_ChatDetail_AfterStream": "05",
+    "10_Peak_AfterAllOperations": "05",
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "FreeMemory_MB",
+    "01_AppLaunch": 5,
+    "02_ProductList_Initial": 5,
+    "03_ProductList_AfterHeavyScroll": 5,
+    "04_ProductDetail": 5,
+    "05_Cart_Initial": 5,
+    "06_Cart_AfterRapidUpdates": 6,
+    "07_ChatList": 5,
+    "08_ChatDetail_Initial": 5,
+    "09_ChatDetail_AfterStream": 5,
+    "10_Peak_AfterAllOperations": 5,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "MemoryPressure_%",
+    "01_AppLaunch": 55,
+    "02_ProductList_Initial": 52,
+    "03_ProductList_AfterHeavyScroll": 54,
+    "04_ProductDetail": 54,
+    "05_Cart_Initial": 55,
+    "06_Cart_AfterRapidUpdates": 88,
+    "07_ChatList": 54,
+    "08_ChatDetail_Initial": 60,
+    "09_ChatDetail_AfterStream": 52,
+    "10_Peak_AfterAllOperations": 52,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 6,
+    "02_ProductList_Initial": 6,
+    "03_ProductList_AfterHeavyScroll": 6,
+    "04_ProductDetail": 6,
+    "05_Cart_Initial": 6,
+    "06_Cart_AfterRapidUpdates": 8,
+    "07_ChatList": 6,
+    "08_ChatDetail_Initial": 6,
+    "09_ChatDetail_AfterStream": 6,
+    "10_Peak_AfterAllOperations": 6,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 87,
+    "02_ProductList_Initial": 84,
+    "03_ProductList_AfterHeavyScroll": 87,
+    "04_ProductDetail": 86,
+    "05_Cart_Initial": 87,
+    "06_Cart_AfterRapidUpdates": 21,
+    "07_ChatList": 86,
+    "08_ChatDetail_Initial": 92,
+    "09_ChatDetail_AfterStream": 84,
+    "10_Peak_AfterAllOperations": 84,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 30,
+    "02_ProductList_Initial": 30,
+    "03_ProductList_AfterHeavyScroll": 30,
+    "04_ProductDetail": 30,
+    "05_Cart_Initial": 30,
+    "06_Cart_AfterRapidUpdates": 32,
+    "07_ChatList": 30,
+    "08_ChatDetail_Initial": 30,
+    "09_ChatDetail_AfterStream": 30,
+    "10_Peak_AfterAllOperations": 30,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 78,
+    "02_ProductList_Initial": 75,
+    "03_ProductList_AfterHeavyScroll": 77,
+    "04_ProductDetail": 76,
+    "05_Cart_Initial": 78,
+    "06_Cart_AfterRapidUpdates": 11,
+    "07_ChatList": 77,
+    "08_ChatDetail_Initial": 83,
+    "09_ChatDetail_AfterStream": 74,
+    "10_Peak_AfterAllOperations": 74,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 256,
+    "02_ProductList_Initial": 256,
+    "03_ProductList_AfterHeavyScroll": 256,
+    "04_ProductDetail": 256,
+    "05_Cart_Initial": 256,
+    "06_Cart_AfterRapidUpdates": 256,
+    "07_ChatList": 256,
+    "08_ChatDetail_Initial": 256,
+    "09_ChatDetail_AfterStream": 256,
+    "10_Peak_AfterAllOperations": 256,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": "00",
+    "02_ProductList_Initial": "00",
+    "03_ProductList_AfterHeavyScroll": "00",
+    "04_ProductDetail": "00",
+    "05_Cart_Initial": "00",
+    "06_Cart_AfterRapidUpdates": "00",
+    "07_ChatList": "00",
+    "08_ChatDetail_Initial": "00",
+    "09_ChatDetail_AfterStream": "00",
+    "10_Peak_AfterAllOperations": "00",
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 23,
+    "02_ProductList_Initial": 23,
+    "03_ProductList_AfterHeavyScroll": 23,
+    "04_ProductDetail": 23,
+    "05_Cart_Initial": 23,
+    "06_Cart_AfterRapidUpdates": 23,
+    "07_ChatList": 23,
+    "08_ChatDetail_Initial": 23,
+    "09_ChatDetail_AfterStream": 23,
+    "10_Peak_AfterAllOperations": 23,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 91,
+    "02_ProductList_Initial": 91,
+    "03_ProductList_AfterHeavyScroll": 91,
+    "04_ProductDetail": 91,
+    "05_Cart_Initial": 91,
+    "06_Cart_AfterRapidUpdates": 91,
+    "07_ChatList": 91,
+    "08_ChatDetail_Initial": 91,
+    "09_ChatDetail_AfterStream": 91,
+    "10_Peak_AfterAllOperations": 91,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 2,
+    "02_ProductList_Initial": 2,
+    "03_ProductList_AfterHeavyScroll": 2,
+    "04_ProductDetail": 2,
+    "05_Cart_Initial": 2,
+    "06_Cart_AfterRapidUpdates": 3,
+    "07_ChatList": 2,
+    "08_ChatDetail_Initial": 2,
+    "09_ChatDetail_AfterStream": 2,
+    "10_Peak_AfterAllOperations": 2,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  },
+  {
+    "# Architecture: Classic MVVM (classicmvvm)": "",
+    "# Test: CompleteFlow": "",
+    "# Timestamp: 20251024_045402": "",
+    "# Snapshots: 10": "",
+    "#": "",
+    "Label": "",
+    "01_AppLaunch": 68,
+    "02_ProductList_Initial": 67,
+    "03_ProductList_AfterHeavyScroll": 68,
+    "04_ProductDetail": 68,
+    "05_Cart_Initial": 68,
+    "06_Cart_AfterRapidUpdates": 21,
+    "07_ChatList": 68,
+    "08_ChatDetail_Initial": 70,
+    "09_ChatDetail_AfterStream": 67,
+    "10_Peak_AfterAllOperations": 67,
+    "# Summary Statistics": "",
+    "# Initial_PSS_MB: 30": "",
+    "# Peak_PSS_MB: 38": "",
+    "# Final_PSS_MB: 30": "",
+    "# Growth_MB: 0": "",
+    "# Comparison Row (copy to spreadsheet)": "",
+    "# Architecture": "",
+    "# classicmvvm": ""
+  }
+],
+"staticCodeAnalysis": {
+  "size_metrics": {
+    "lines_of_code": 2676,
+    "source_lines": 2459,
+    "files": 33,
+    "classes": 29,
+    "functions": 83,
+    "avg_function_length": 29.63,
+    "avg_class_size": 84.79,
+    "functions_per_class": 2.86
+  },
+  "complexity_metrics": {
+    "total_cyclomatic_complexity": 162,
+    "total_cognitive_complexity": 217,
+    "avg_cyclomatic_complexity": 1.95,
+    "avg_cognitive_complexity": 2.61,
+    "max_cyclomatic_complexity": 9,
+    "complexity_distribution": {
+      "low_0_5": 81,
+      "medium_6_10": 2,
+      "high_11_15": 2,
+      "very_high_16_plus": 0
+    }
+  },
+  "maintainability_metrics": {
+    "technical_debt_hours": 2.9,
+    "technical_debt_ratio": 0.2,
+    "code_smells": 13
+  }
+}
+}

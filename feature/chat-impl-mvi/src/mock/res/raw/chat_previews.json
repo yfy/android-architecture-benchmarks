@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "chat_1",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=1",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760241232260,
+    "unreadCount": 3,
+    "isOnline": false,
+    "isTyping": true
+  },
+  {
+    "id": "chat_2",
+    "name": "Ali Çelik",
+    "avatarUrl": "https://i.pravatar.cc/150?img=2",
+    "lastMessage": "Last message from Ali Çelik",
+    "lastMessageTime": 1760273632260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_3",
+    "name": "Emre Koç",
+    "avatarUrl": "https://i.pravatar.cc/150?img=3",
+    "lastMessage": "Last message from Emre Koç",
+    "lastMessageTime": 1760216752260,
+    "unreadCount": 5,
+    "isOnline": true,
+    "isTyping": true
+  },
+  {
+    "id": "chat_4",
+    "name": "Ali Çelik",
+    "avatarUrl": "https://i.pravatar.cc/150?img=4",
+    "lastMessage": "Last message from Ali Çelik",
+    "lastMessageTime": 1760201812260,
+    "unreadCount": 1,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_5",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=5",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760206552260,
+    "unreadCount": 2,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_6",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=6",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760201512260,
+    "unreadCount": 3,
+    "isOnline": true,
+    "isTyping": true
+  },
+  {
+    "id": "chat_7",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=7",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760243212260,
+    "unreadCount": 0,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_8",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=8",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760274652260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_9",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=9",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760227012260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_10",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=10",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760216692260,
+    "unreadCount": 0,
+    "isOnline": false,
+    "isTyping": true
+  },
+  {
+    "id": "chat_11",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=11",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760230612260,
+    "unreadCount": 0,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_12",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=12",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760229652260,
+    "unreadCount": 8,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_13",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=13",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760269492260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": true
+  },
+  {
+    "id": "chat_14",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=14",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760275972260,
+    "unreadCount": 3,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_15",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=15",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760278132260,
+    "unreadCount": 10,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_16",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=16",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760203012260,
+    "unreadCount": 0,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_17",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=17",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760279332260,
+    "unreadCount": 10,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_18",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=18",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760249692260,
+    "unreadCount": 5,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_19",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=19",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760202112260,
+    "unreadCount": 1,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_20",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=20",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760235172260,
+    "unreadCount": 3,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_21",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=21",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760274712260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_22",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=22",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760270152260,
+    "unreadCount": 4,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_23",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=23",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760249452260,
+    "unreadCount": 4,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_24",
+    "name": "Emre Koç",
+    "avatarUrl": "https://i.pravatar.cc/150?img=24",
+    "lastMessage": "Last message from Emre Koç",
+    "lastMessageTime": 1760255452260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": true
+  },
+  {
+    "id": "chat_25",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=25",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760277172260,
+    "unreadCount": 2,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_26",
+    "name": "Ali Çelik",
+    "avatarUrl": "https://i.pravatar.cc/150?img=26",
+    "lastMessage": "Last message from Ali Çelik",
+    "lastMessageTime": 1760237572260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_27",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=27",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760228032260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_28",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=28",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760261452260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_29",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=29",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760221372260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_30",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=30",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760251792260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_31",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=31",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760237272260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_32",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=32",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760266612260,
+    "unreadCount": 1,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_33",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=33",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760215252260,
+    "unreadCount": 7,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_34",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=34",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760200132260,
+    "unreadCount": 0,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_35",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=35",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760219752260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_36",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=36",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760215372260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_37",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=37",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760236852260,
+    "unreadCount": 3,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_38",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=38",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760225512260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_39",
+    "name": "Emre Koç",
+    "avatarUrl": "https://i.pravatar.cc/150?img=39",
+    "lastMessage": "Last message from Emre Koç",
+    "lastMessageTime": 1760207332260,
+    "unreadCount": 0,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_40",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=40",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760264272260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_41",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=41",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760279032260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_42",
+    "name": "Emre Koç",
+    "avatarUrl": "https://i.pravatar.cc/150?img=42",
+    "lastMessage": "Last message from Emre Koç",
+    "lastMessageTime": 1760223292260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_43",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=43",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760246692260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_44",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=44",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760272912260,
+    "unreadCount": 2,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_45",
+    "name": "Emre Koç",
+    "avatarUrl": "https://i.pravatar.cc/150?img=45",
+    "lastMessage": "Last message from Emre Koç",
+    "lastMessageTime": 1760215132260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_46",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=46",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760246572260,
+    "unreadCount": 6,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_47",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=47",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760235172260,
+    "unreadCount": 5,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_48",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=48",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760201812260,
+    "unreadCount": 3,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_49",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=49",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760205652260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_50",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=50",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760231872260,
+    "unreadCount": 1,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_51",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=51",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760231392260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_52",
+    "name": "Emre Koç",
+    "avatarUrl": "https://i.pravatar.cc/150?img=52",
+    "lastMessage": "Last message from Emre Koç",
+    "lastMessageTime": 1760260312260,
+    "unreadCount": 5,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_53",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=53",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760207272260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_54",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=54",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760281372260,
+    "unreadCount": 4,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_55",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=55",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760210392260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_56",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=56",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760243332260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_57",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=57",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760275792260,
+    "unreadCount": 5,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_58",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=58",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760280532260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_59",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=59",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760266372260,
+    "unreadCount": 6,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_60",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=60",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760226712260,
+    "unreadCount": 0,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_61",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=61",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760258392260,
+    "unreadCount": 1,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_62",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=62",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760267212260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_63",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=63",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760216452260,
+    "unreadCount": 10,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_64",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=64",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760226352260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_65",
+    "name": "Ali Çelik",
+    "avatarUrl": "https://i.pravatar.cc/150?img=65",
+    "lastMessage": "Last message from Ali Çelik",
+    "lastMessageTime": 1760200372260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_66",
+    "name": "Ali Çelik",
+    "avatarUrl": "https://i.pravatar.cc/150?img=66",
+    "lastMessage": "Last message from Ali Çelik",
+    "lastMessageTime": 1760248672260,
+    "unreadCount": 0,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_67",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=67",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760217232260,
+    "unreadCount": 2,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_68",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=68",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760222332260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_69",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=69",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760245792260,
+    "unreadCount": 3,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_70",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=70",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760211472260,
+    "unreadCount": 0,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_71",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=71",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760214472260,
+    "unreadCount": 6,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_72",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=72",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760273752260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_73",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=73",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760252632260,
+    "unreadCount": 1,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_74",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=74",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760215072260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_75",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=75",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760203132260,
+    "unreadCount": 7,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_76",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=76",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760269792260,
+    "unreadCount": 6,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_77",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=77",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760200672260,
+    "unreadCount": 1,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_78",
+    "name": "Zeynep Arslan",
+    "avatarUrl": "https://i.pravatar.cc/150?img=78",
+    "lastMessage": "Last message from Zeynep Arslan",
+    "lastMessageTime": 1760231632260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_79",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=79",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760265292260,
+    "unreadCount": 1,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_80",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=80",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760260012260,
+    "unreadCount": 1,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_81",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=81",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760232952260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_82",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=82",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760274352260,
+    "unreadCount": 0,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_83",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=83",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760224852260,
+    "unreadCount": 6,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_84",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=84",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760237212260,
+    "unreadCount": 10,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_85",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=85",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760213332260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_86",
+    "name": "Fatma Öz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=86",
+    "lastMessage": "Last message from Fatma Öz",
+    "lastMessageTime": 1760280832260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_87",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=87",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760269132260,
+    "unreadCount": 10,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_88",
+    "name": "Ali Çelik",
+    "avatarUrl": "https://i.pravatar.cc/150?img=88",
+    "lastMessage": "Last message from Ali Çelik",
+    "lastMessageTime": 1760208292260,
+    "unreadCount": 3,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_89",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=89",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760201032260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_90",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=90",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760281252260,
+    "unreadCount": 9,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_91",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=91",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760248432260,
+    "unreadCount": 8,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_92",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=92",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760211112260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_93",
+    "name": "Mustafa Yıldız",
+    "avatarUrl": "https://i.pravatar.cc/150?img=93",
+    "lastMessage": "Last message from Mustafa Yıldız",
+    "lastMessageTime": 1760229832260,
+    "unreadCount": 4,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_94",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=94",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760257912260,
+    "unreadCount": 8,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_95",
+    "name": "Selin Aydın",
+    "avatarUrl": "https://i.pravatar.cc/150?img=95",
+    "lastMessage": "Last message from Selin Aydın",
+    "lastMessageTime": 1760215552260,
+    "unreadCount": 9,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_96",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=96",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760214112260,
+    "unreadCount": 3,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_97",
+    "name": "Elif Şahin",
+    "avatarUrl": "https://i.pravatar.cc/150?img=97",
+    "lastMessage": "Last message from Elif Şahin",
+    "lastMessageTime": 1760231332260,
+    "unreadCount": 0,
+    "isOnline": true,
+    "isTyping": false
+  },
+  {
+    "id": "chat_98",
+    "name": "Ahmet Yılmaz",
+    "avatarUrl": "https://i.pravatar.cc/150?img=98",
+    "lastMessage": "Last message from Ahmet Yılmaz",
+    "lastMessageTime": 1760245072260,
+    "unreadCount": 7,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_99",
+    "name": "Mehmet Demir",
+    "avatarUrl": "https://i.pravatar.cc/150?img=99",
+    "lastMessage": "Last message from Mehmet Demir",
+    "lastMessageTime": 1760259232260,
+    "unreadCount": 2,
+    "isOnline": false,
+    "isTyping": false
+  },
+  {
+    "id": "chat_100",
+    "name": "Ayşe Kaya",
+    "avatarUrl": "https://i.pravatar.cc/150?img=100",
+    "lastMessage": "Last message from Ayşe Kaya",
+    "lastMessageTime": 1760215012260,
+    "unreadCount": 9,
+    "isOnline": false,
+    "isTyping": false
+  }
+]

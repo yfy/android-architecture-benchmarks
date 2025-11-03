@@ -1,0 +1,142 @@
+[
+  {
+    "id": "cat_1",
+    "name": "Electronics",
+    "icon": "📱",
+    "imageUrl": "https://picsum.photos/seed/cat1/200/200",
+    "productCount": 288
+  },
+  {
+    "id": "cat_2",
+    "name": "Computers",
+    "icon": "💻",
+    "imageUrl": "https://picsum.photos/seed/cat2/200/200",
+    "productCount": 367
+  },
+  {
+    "id": "cat_3",
+    "name": "Gaming",
+    "icon": "🎮",
+    "imageUrl": "https://picsum.photos/seed/cat3/200/200",
+    "productCount": 414
+  },
+  {
+    "id": "cat_4",
+    "name": "Cameras",
+    "icon": "📷",
+    "imageUrl": "https://picsum.photos/seed/cat4/200/200",
+    "productCount": 274
+  },
+  {
+    "id": "cat_5",
+    "name": "Audio",
+    "icon": "🎧",
+    "imageUrl": "https://picsum.photos/seed/cat5/200/200",
+    "productCount": 279
+  },
+  {
+    "id": "cat_6",
+    "name": "Wearables",
+    "icon": "⌚",
+    "imageUrl": "https://picsum.photos/seed/cat6/200/200",
+    "productCount": 436
+  },
+  {
+    "id": "cat_7",
+    "name": "Home & Garden",
+    "icon": "🏠",
+    "imageUrl": "https://picsum.photos/seed/cat7/200/200",
+    "productCount": 245
+  },
+  {
+    "id": "cat_8",
+    "name": "Automotive",
+    "icon": "🚗",
+    "imageUrl": "https://picsum.photos/seed/cat8/200/200",
+    "productCount": 116
+  },
+  {
+    "id": "cat_9",
+    "name": "Fashion",
+    "icon": "👕",
+    "imageUrl": "https://picsum.photos/seed/cat9/200/200",
+    "productCount": 296
+  },
+  {
+    "id": "cat_10",
+    "name": "Sports",
+    "icon": "👟",
+    "imageUrl": "https://picsum.photos/seed/cat10/200/200",
+    "productCount": 193
+  },
+  {
+    "id": "cat_11",
+    "name": "Books",
+    "icon": "📚",
+    "imageUrl": "https://picsum.photos/seed/cat11/200/200",
+    "productCount": 440
+  },
+  {
+    "id": "cat_12",
+    "name": "Arts",
+    "icon": "🎨",
+    "imageUrl": "https://picsum.photos/seed/cat12/200/200",
+    "productCount": 103
+  },
+  {
+    "id": "cat_13",
+    "name": "Kitchen",
+    "icon": "🍽️",
+    "imageUrl": "https://picsum.photos/seed/cat13/200/200",
+    "productCount": 487
+  },
+  {
+    "id": "cat_14",
+    "name": "Fitness",
+    "icon": "🏃",
+    "imageUrl": "https://picsum.photos/seed/cat14/200/200",
+    "productCount": 122
+  },
+  {
+    "id": "cat_15",
+    "name": "Music",
+    "icon": "🎵",
+    "imageUrl": "https://picsum.photos/seed/cat15/200/200",
+    "productCount": 389
+  },
+  {
+    "id": "cat_16",
+    "name": "TV & Video",
+    "icon": "📺",
+    "imageUrl": "https://picsum.photos/seed/cat16/200/200",
+    "productCount": 375
+  },
+  {
+    "id": "cat_17",
+    "name": "Tools",
+    "icon": "🔧",
+    "imageUrl": "https://picsum.photos/seed/cat17/200/200",
+    "productCount": 434
+  },
+  {
+    "id": "cat_18",
+    "name": "Beauty",
+    "icon": "💄",
+    "imageUrl": "https://picsum.photos/seed/cat18/200/200",
+    "productCount": 269
+  },
+  {
+    "id": "cat_19",
+    "name": "Pets",
+    "icon": "🐕",
+    "imageUrl": "https://picsum.photos/seed/cat19/200/200",
+    "productCount": 231
+  },
+  {
+    "id": "cat_20",
+    "name": "Garden",
+    "icon": "🌱",
+    "imageUrl": "https://picsum.photos/seed/cat20/200/200",
+    "productCount": 120
+  }
+]

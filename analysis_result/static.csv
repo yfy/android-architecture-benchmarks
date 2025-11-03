@@ -1,0 +1,6 @@
+architecture,loc,sloc,files,classes,functions,cyclomatic,cognitive,avg_cyclomatic,max_cyclomatic,technical_debt,code_smells
+classic_mvvm,2676,2459,33,29,83,162,217,1.95,9,2.9,13
+mvc,3005,2715,53,53,111,194,203,1.75,9,1.7,10
+mvp,3318,3001,47,45,163,263,245,1.61,10,4.6,38
+mvi,2732,2510,46,54,85,202,221,2.38,9,2,13
+singlestatemvvm,2657,2442,41,39,86,174,215,2.02,14,2,11

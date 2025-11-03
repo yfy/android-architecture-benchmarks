@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <!-- Error Messages -->
+    <string name="error_title">Hata</string>
+    <string name="error_network">Ağ hatası oluştu</string>
+    <string name="error_database">Veritabanı hatası oluştu</string>
+    <string name="error_validation">Doğrulama hatası oluştu</string>
+    <string name="error_authentication">Kimlik doğrulama hatası oluştu</string>
+    <string name="error_permission">İzin reddedildi</string>
+    <string name="error_unknown">Bilinmeyen bir hata oluştu</string>
+    <string name="error_server">Sunucu hatası oluştu</string>
+    <string name="error_timeout">Bağlantı zaman aşımı. Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.</string>
+    <string name="error_no_internet">İnternet bağlantısı yok. Lütfen ağ ayarlarınızı kontrol edin.</string>
+    <string name="error_unexpected">Beklenmeyen bir hata oluştu</string>
+    
+    <!-- Error Codes -->
+    <string name="error_code_network">AĞ_HATASI</string>
+    <string name="error_code_database">VERİTABANI_HATASI</string>
+    <string name="error_code_validation">DOĞRULAMA_HATASI</string>
+    <string name="error_code_auth">KİMLİK_HATASI</string>
+    <string name="error_code_permission">İZİN_HATASI</string>
+    <string name="error_code_unknown">BİLİNMEYEN_HATA</string>
+    <string name="error_code_server">SUNUCU_HATASI</string>
+    <string name="error_code_timeout">ZAMAN_AŞIMI_HATASI</string>
+    <string name="error_code_no_internet">İNTERNET_YOK_HATASI</string>
+    
+    <!-- Common Actions -->
+    <string name="action_retry">Tekrar Dene</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_ok">Tamam</string>
+    <string name="action_yes">Evet</string>
+    <string name="action_no">Hayır</string>
+    <string name="action_confirm">Onayla</string>
+    <string name="action_dismiss">Kapat</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="action_share">Paylaş</string>
+    <string name="action_copy">Kopyala</string>
+    <string name="action_paste">Yapıştır</string>
+    <string name="action_cut">Kes</string>
+    <string name="action_select_all">Tümünü Seç</string>
+    
+    <!-- Loading States -->
+    <string name="loading_please_wait">Lütfen bekleyin...</string>
+    <string name="loading_processing">İşleniyor...</string>
+    <string name="loading_uploading">Yükleniyor...</string>
+    <string name="loading_downloading">İndiriliyor...</string>
+    <string name="loading_saving">Kaydediliyor...</string>
+    <string name="loading_loading">Yükleniyor...</string>
+    
+    <!-- Success Messages -->
+    <string name="success_saved">Başarıyla kaydedildi</string>
+    <string name="success_updated">Başarıyla güncellendi</string>
+    <string name="success_deleted">Başarıyla silindi</string>
+    <string name="success_uploaded">Başarıyla yüklendi</string>
+    <string name="success_downloaded">Başarıyla indirildi</string>
+    <string name="success_copied">Panoya kopyalandı</string>
+    <string name="success_shared">Başarıyla paylaşıldı</string>
+    <string name="success">Başarılı</string>
+
+    <!-- Date and Time -->
+    <string name="date_today">Bugün</string>
+    <string name="date_yesterday">Dün</string>
+    <string name="date_tomorrow">Yarın</string>
+    <string name="time_am">ÖÖ</string>
+    <string name="time_pm">ÖS</string>
+    
+    <!-- Units -->
+    <string name="unit_bytes">B</string>
+    <string name="unit_kilobytes">KB</string>
+    <string name="unit_megabytes">MB</string>
+    <string name="unit_gigabytes">GB</string>
+    <string name="unit_terabytes">TB</string>
+    
+    <!-- Common Placeholders -->
+    <string name="placeholder_loading">Yükleniyor...</string>
+    <string name="placeholder_empty">Boş</string>
+    <string name="placeholder_unknown">Bilinmiyor</string>
+    <string name="placeholder_not_available">Mevcut değil</string>
+</resources>

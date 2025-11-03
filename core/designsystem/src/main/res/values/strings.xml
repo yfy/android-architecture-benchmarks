@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <!-- Dialog Components -->
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_dismiss">Dismiss</string>
+    <string name="dialog_close">Close</string>
+    
+    <!-- Button Components -->
+    <string name="button_primary">Primary Button</string>
+    <string name="button_secondary">Secondary Button</string>
+    <string name="button_tertiary">Tertiary Button</string>
+    <string name="button_danger">Danger Button</string>
+    <string name="button_loading">Loading…</string>
+    
+    <!-- TextField Components -->
+    <string name="textfield_show_password">Show password</string>
+    <string name="textfield_hide_password">Hide password</string>
+    <string name="textfield_clear_text">Clear text</string>
+    <string name="textfield_sample_text">Sample Text</string>
+    <string name="textfield_label">Label</string>
+    <string name="textfield_placeholder">Placeholder</string>
+    <string name="textfield_password">Password</string>
+    <string name="textfield_error_field">Error Field</string>
+    <string name="textfield_required">This field is required</string>
+    
+    <!-- Navigation Components -->
+    <string name="nav_back">Navigate back</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_skip">Skip</string>
+    <string name="nav_back_button">Back</string>
+    <string name="nav_next">Next</string>
+    <string name="nav_get_started">Get Started</string>
+    
+    <!-- Card Components -->
+    <string name="card_elevated">Elevated Card</string>
+    <string name="card_filled">Filled Card</string>
+    <string name="card_outlined">Outlined Card</string>
+    
+    <!-- List Components -->
+    <string name="list_one_line_item">One Line Item</string>
+    <string name="list_two_line_item">Two Line Item</string>
+    <string name="list_three_line_item">Three Line Item</string>
+    <string name="list_subtitle">Subtitle</string>
+    <string name="list_supporting_text">Supporting Text</string>
+    
+    <!-- Switch Components -->
+    <string name="switch_label">Switch Label</string>
+    <string name="switch_disabled">Disabled Switch</string>
+    
+    <!-- Checkbox Components -->
+    <string name="checkbox_label">Checkbox Label</string>
+    <string name="checkbox_disabled">Disabled Checkbox</string>
+    
+    <!-- Bottom Sheet Components -->
+    <string name="bottomsheet_title">Bottom Sheet Title</string>
+    <string name="bottomsheet_content">Bottom Sheet Content</string>
+    <string name="bottomsheet_with_handle_content">Bottom Sheet With Handle Content</string>
+    
+    <!-- Snackbar Components -->
+    <string name="snackbar_success_message">Success message</string>
+    <string name="snackbar_error_message">Error message</string>
+    <string name="snackbar_warning_message">Warning message</string>
+    <string name="snackbar_info_message">Info message</string>
+    
+    <!-- Typography Showcase -->
+    <string name="typography_showcase">Typography Showcase</string>
+    <string name="typography_display_styles">Display Styles</string>
+    <string name="typography_display_large">Display Large</string>
+    <string name="typography_display_medium">Display Medium</string>
+    <string name="typography_display_small">Display Small</string>
+    <string name="typography_headline_styles">Headline Styles</string>
+    <string name="typography_headline_large">Headline Large</string>
+    <string name="typography_headline_medium">Headline Medium</string>
+    <string name="typography_headline_small">Headline Small</string>
+    <string name="typography_title_styles">Title Styles</string>
+    <string name="typography_title_large">Title Large</string>
+    <string name="typography_title_medium">Title Medium</string>
+    <string name="typography_title_small">Title Small</string>
+    <string name="typography_body_styles">Body Styles</string>
+    <string name="typography_body_large">Body Large</string>
+    <string name="typography_body_medium">Body Medium</string>
+    <string name="typography_body_small">Body Small</string>
+    <string name="typography_label_styles">Label Styles</string>
+    <string name="typography_label_large">Label Large</string>
+    <string name="typography_label_medium">Label Medium</string>
+    <string name="typography_label_small">Label Small</string>
+    
+    <!-- Color Showcase -->
+    <string name="color_scheme">YFY Color Scheme</string>
+    <string name="color_primary_colors">Primary Colors (Pink)</string>
+    <string name="color_primary">Primary</string>
+    <string name="color_primary_container">Primary Container</string>
+    <string name="color_inverse_primary">Inverse Primary</string>
+    <string name="color_secondary_colors">Secondary Colors (Orange)</string>
+    <string name="color_secondary">Secondary</string>
+    <string name="color_secondary_container">Secondary Container</string>
+    <string name="color_tertiary_colors">Tertiary Colors (Purple)</string>
+    <string name="color_tertiary">Tertiary</string>
+    <string name="color_tertiary_container">Tertiary Container</string>
+    <string name="color_surface_colors">Surface Colors</string>
+    <string name="color_surface">Surface</string>
+    <string name="color_surface_variant">Surface Variant</string>
+    <string name="color_background">Background</string>
+    <string name="color_error_colors">Error Colors</string>
+    <string name="color_error">Error</string>
+    <string name="color_error_container">Error Container</string>
+    
+    <!-- Spacing Showcase -->
+    <string name="spacing_system">Spacing System</string>
+    <string name="spacing_xs2">xs2</string>
+    <string name="spacing_xs">xs</string>
+    <string name="spacing_sm">sm</string>
+    <string name="spacing_sm2">sm2</string>
+    <string name="spacing_md">md</string>
+    <string name="spacing_md2">md2</string>
+    <string name="spacing_lg">lg</string>
+    <string name="spacing_lg2">lg2</string>
+    <string name="spacing_xl">xl</string>
+    <string name="spacing_xl2">xl2</string>
+    <string name="spacing_screen_padding">screenPadding</string>
+    <string name="spacing_screen_padding_large">screenPaddingLarge</string>
+    <string name="spacing_button_padding">buttonPadding</string>
+    <string name="spacing_card_padding">cardPadding</string>
+    <string name="spacing_list_item_spacing">listItemSpacing</string>
+    <string name="spacing_divider_spacing">dividerSpacing</string>
+    
+    <!-- Theme Showcase -->
+    <string name="theme_showcase">YFY Theme Showcase</string>
+    <string name="theme_primary_container">Primary Container</string>
+    <string name="theme_primary_description">Vibrant pink design with perfect contrast</string>
+    <string name="theme_secondary_container">Secondary Container</string>
+    <string name="theme_secondary_description">Warm orange accents for highlights</string>
+    <string name="theme_tertiary_container">Tertiary Container</string>
+    <string name="theme_tertiary_description">Rich purple for special elements</string>
+    <string name="theme_primary">Primary</string>
+    <string name="theme_outlined">Outlined</string>
+    <string name="theme_modern_design">Modern Design</string>
+    <string name="theme_label">Label</string>
+    
+    <!-- Dialog Preview -->
+    <string name="dialog_title">Dialog Title</string>
+    <string name="dialog_message">This is a sample dialog message that can be used to display information to the user.</string>
+    <string name="dialog_fullscreen_title">Full Screen Dialog</string>
+    <string name="dialog_fullscreen_message">This is a full screen dialog that can be used for more complex content.</string>
+</resources>

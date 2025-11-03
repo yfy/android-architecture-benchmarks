@@ -1,0 +1,16 @@
+test_name,best_arch,second_arch,n_best,n_second,shapiro_best_statistic,shapiro_best_pvalue,is_normal_best,shapiro_second_statistic,shapiro_second_pvalue,is_normal_second,levene_statistic,levene_pvalue,equal_variances,t_statistic,t_pvalue,t_significant,mw_statistic,mw_pvalue,mw_significant,cohens_d,effect_size,holm_rank,holm_alpha,holm_significant,holm_rank_mw,holm_alpha_mw,holm_significant_mw
+cartCheckoutFlow,mvi,classicmvvm,10,10,0.8583,0.0728,True,0.8738,0.1106,True,0.2147,0.6487,True,-0.9694,0.3468,False,42.0000,0.5681,False,-0.4335,small,10,0.0083,False,13,0.0167,False
+cartQuantityUpdatePerformance,mvi,singlestatemvvm,10,10,0.8441,0.0495,False,0.8260,0.0300,False,0.5496,0.4680,True,-0.4603,0.6511,False,40.0000,0.4683,False,-0.2058,small,13,0.0167,False,11,0.0100,False
+cartQuantityUpdatesWithDynamicSetup,mvc,mvi,10,10,0.8614,0.0793,True,0.7239,0.0017,False,0.0186,0.8931,True,-60.3454,0.0000,True,0.0000,0.0002,True,-26.9873,large,1,0.0033,True,2,0.0036,True
+categoryFilterPerformance,mvp,classicmvvm,10,10,0.6958,0.0008,False,0.9181,0.3411,True,0.8276,0.3750,True,-3.4435,0.0044,True,18.0000,0.0162,True,-1.5400,large,4,0.0042,False,5,0.0045,False
+chatDetailMessageStreamAndSending,mvc,mvi,10,10,0.8705,0.1014,True,0.8815,0.1357,True,2.1793,0.1572,True,-2.9414,0.0111,True,16.0000,0.0110,True,-1.3154,large,5,0.0045,False,4,0.0042,False
+chatListRealtimeUpdates,mvc,mvi,10,10,0.7322,0.0022,False,0.8155,0.0223,False,0.0378,0.8481,True,-0.1467,0.8850,False,52.0000,0.9094,False,-0.0656,negligible,14,0.0250,False,14,0.0250,False
+chatRapidSwitching,mvc,classicmvvm,10,10,0.8845,0.1468,True,0.8058,0.0171,False,0.7478,0.3986,True,-5.0750,0.0001,True,4.0000,0.0006,True,-2.2696,large,3,0.0038,True,3,0.0038,True
+continuousScrollJankTest,singlestatemvvm,mvp,10,10,0.7888,0.0106,False,0.6968,0.0008,False,0.3466,0.5634,True,-1.7601,0.0958,False,24.0000,0.0523,False,-0.7872,medium,7,0.0056,False,6,0.0050,False
+flingJankTest,mvc,classicmvvm,10,10,0.9127,0.2998,True,0.7987,0.0140,False,1.2095,0.2859,True,-2.2954,0.0362,True,24.0000,0.0530,False,-1.0265,large,6,0.0050,False,7,0.0056,False
+productListCategoryFiltering,mvc,singlestatemvvm,10,10,0.8610,0.0785,True,0.8862,0.1536,True,0.0005,0.9829,True,-0.9283,0.3657,False,40.0000,0.4710,False,-0.4152,small,11,0.0100,False,12,0.0125,False
+productListRapidScrolling,singlestatemvvm,mvp,10,10,0.8269,0.0307,False,0.8166,0.0231,False,0.0720,0.7915,True,-1.4696,0.1593,False,24.0000,0.0530,False,-0.6572,medium,8,0.0063,False,8,0.0063,False
+productListScrollAndPagination,classicmvvm,mvi,10,10,0.8589,0.0741,True,0.6791,0.0005,False,0.7523,0.3972,True,-0.4916,0.6290,False,36.0000,0.3057,False,-0.2199,small,12,0.0125,False,10,0.0083,False
+rapidDirectionChangeJankTest,mvp,singlestatemvvm,10,10,0.7702,0.0063,False,0.7353,0.0024,False,0.0034,0.9541,True,-0.0761,0.9402,False,48.0000,0.9094,False,-0.0340,negligible,15,0.0500,False,15,0.0500,False
+startupCold,mvc,mvp,30,30,0.9295,0.0478,False,0.9353,0.0682,True,0.0135,0.9079,True,-5.9379,0.0000,True,116.0000,0.0000,True,-1.5332,large,2,0.0036,True,1,0.0033,True
+startupWarm,mvp,mvi,30,30,0.9190,0.0253,False,0.8843,0.0036,False,0.2499,0.6190,True,-1.0546,0.2960,False,368.0000,0.2280,False,-0.2723,small,9,0.0071,False,9,0.0071,False

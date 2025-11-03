@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <!-- Dialog Components -->
+    <string name="dialog_confirm">Onayla</string>
+    <string name="dialog_cancel">İptal</string>
+    <string name="dialog_ok">Tamam</string>
+    <string name="dialog_yes">Evet</string>
+    <string name="dialog_no">Hayır</string>
+    <string name="dialog_dismiss">Kapat</string>
+    <string name="dialog_close">Kapat</string>
+    
+    <!-- Button Components -->
+    <string name="button_primary">Birincil Buton</string>
+    <string name="button_secondary">İkincil Buton</string>
+    <string name="button_tertiary">Üçüncül Buton</string>
+    <string name="button_danger">Tehlikeli Buton</string>
+    <string name="button_loading">Yükleniyor…</string>
+    
+    <!-- TextField Components -->
+    <string name="textfield_show_password">Şifreyi göster</string>
+    <string name="textfield_hide_password">Şifreyi gizle</string>
+    <string name="textfield_clear_text">Metni temizle</string>
+    <string name="textfield_sample_text">Örnek Metin</string>
+    <string name="textfield_label">Etiket</string>
+    <string name="textfield_placeholder">Yer tutucu</string>
+    <string name="textfield_password">Şifre</string>
+    <string name="textfield_error_field">Hata Alanı</string>
+    <string name="textfield_required">Bu alan zorunludur</string>
+    
+    <!-- Navigation Components -->
+    <string name="nav_back">Geri git</string>
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_skip">Geç</string>
+    <string name="nav_back_button">Geri</string>
+    <string name="nav_next">İleri</string>
+    <string name="nav_get_started">Başla</string>
+    
+    <!-- Card Components -->
+    <string name="card_elevated">Yükseltilmiş Kart</string>
+    <string name="card_filled">Dolu Kart</string>
+    <string name="card_outlined">Çerçeveli Kart</string>
+    
+    <!-- List Components -->
+    <string name="list_one_line_item">Tek Satır Öğe</string>
+    <string name="list_two_line_item">İki Satır Öğe</string>
+    <string name="list_three_line_item">Üç Satır Öğe</string>
+    <string name="list_subtitle">Alt başlık</string>
+    <string name="list_supporting_text">Destekleyici Metin</string>
+    
+    <!-- Switch Components -->
+    <string name="switch_label">Anahtar Etiketi</string>
+    <string name="switch_disabled">Devre Dışı Anahtar</string>
+    
+    <!-- Checkbox Components -->
+    <string name="checkbox_label">Onay Kutusu Etiketi</string>
+    <string name="checkbox_disabled">Devre Dışı Onay Kutusu</string>
+    
+    <!-- Bottom Sheet Components -->
+    <string name="bottomsheet_title">Alt Sayfa Başlığı</string>
+    <string name="bottomsheet_content">Alt Sayfa İçeriği</string>
+    <string name="bottomsheet_with_handle_content">Kulp ile Alt Sayfa İçeriği</string>
+    
+    <!-- Snackbar Components -->
+    <string name="snackbar_success_message">Başarı mesajı</string>
+    <string name="snackbar_error_message">Hata mesajı</string>
+    <string name="snackbar_warning_message">Uyarı mesajı</string>
+    <string name="snackbar_info_message">Bilgi mesajı</string>
+    
+    <!-- Typography Showcase -->
+    <string name="typography_showcase">Tipografi Vitrin</string>
+    <string name="typography_display_styles">Görüntü Stilleri</string>
+    <string name="typography_display_large">Büyük Görüntü</string>
+    <string name="typography_display_medium">Orta Görüntü</string>
+    <string name="typography_display_small">Küçük Görüntü</string>
+    <string name="typography_headline_styles">Başlık Stilleri</string>
+    <string name="typography_headline_large">Büyük Başlık</string>
+    <string name="typography_headline_medium">Orta Başlık</string>
+    <string name="typography_headline_small">Küçük Başlık</string>
+    <string name="typography_title_styles">Başlık Stilleri</string>
+    <string name="typography_title_large">Büyük Başlık</string>
+    <string name="typography_title_medium">Orta Başlık</string>
+    <string name="typography_title_small">Küçük Başlık</string>
+    <string name="typography_body_styles">Gövde Stilleri</string>
+    <string name="typography_body_large">Büyük Gövde</string>
+    <string name="typography_body_medium">Orta Gövde</string>
+    <string name="typography_body_small">Küçük Gövde</string>
+    <string name="typography_label_styles">Etiket Stilleri</string>
+    <string name="typography_label_large">Büyük Etiket</string>
+    <string name="typography_label_medium">Orta Etiket</string>
+    <string name="typography_label_small">Küçük Etiket</string>
+    
+    <!-- Color Showcase -->
+    <string name="color_scheme">YFY Renk Şeması</string>
+    <string name="color_primary_colors">Birincil Renkler (Pembe)</string>
+    <string name="color_primary">Birincil</string>
+    <string name="color_primary_container">Birincil Kapsayıcı</string>
+    <string name="color_inverse_primary">Ters Birincil</string>
+    <string name="color_secondary_colors">İkincil Renkler (Turuncu)</string>
+    <string name="color_secondary">İkincil</string>
+    <string name="color_secondary_container">İkincil Kapsayıcı</string>
+    <string name="color_tertiary_colors">Üçüncül Renkler (Mor)</string>
+    <string name="color_tertiary">Üçüncül</string>
+    <string name="color_tertiary_container">Üçüncül Kapsayıcı</string>
+    <string name="color_surface_colors">Yüzey Renkleri</string>
+    <string name="color_surface">Yüzey</string>
+    <string name="color_surface_variant">Yüzey Varyantı</string>
+    <string name="color_background">Arka Plan</string>
+    <string name="color_error_colors">Hata Renkleri</string>
+    <string name="color_error">Hata</string>
+    <string name="color_error_container">Hata Kapsayıcısı</string>
+    
+    <!-- Spacing Showcase -->
+    <string name="spacing_system">Boşluk Sistemi</string>
+    <string name="spacing_xs2">xs2</string>
+    <string name="spacing_xs">xs</string>
+    <string name="spacing_sm">sm</string>
+    <string name="spacing_sm2">sm2</string>
+    <string name="spacing_md">md</string>
+    <string name="spacing_md2">md2</string>
+    <string name="spacing_lg">lg</string>
+    <string name="spacing_lg2">lg2</string>
+    <string name="spacing_xl">xl</string>
+    <string name="spacing_xl2">xl2</string>
+    <string name="spacing_screen_padding">ekranDolgu</string>
+    <string name="spacing_screen_padding_large">ekranDolguBüyük</string>
+    <string name="spacing_button_padding">butonDolgu</string>
+    <string name="spacing_card_padding">kartDolgu</string>
+    <string name="spacing_list_item_spacing">listeÖğeBoşluğu</string>
+    <string name="spacing_divider_spacing">ayırıcıBoşluk</string>
+    
+    <!-- Theme Showcase -->
+    <string name="theme_showcase">YFY Tema Vitrin</string>
+    <string name="theme_primary_container">Birincil Kapsayıcı</string>
+    <string name="theme_primary_description">Mükemmel kontrast ile canlı pembe tasarım</string>
+    <string name="theme_secondary_container">İkincil Kapsayıcı</string>
+    <string name="theme_secondary_description">Vurgular için sıcak turuncu aksanlar</string>
+    <string name="theme_tertiary_container">Üçüncül Kapsayıcı</string>
+    <string name="theme_tertiary_description">Özel öğeler için zengin mor</string>
+    <string name="theme_primary">Birincil</string>
+    <string name="theme_outlined">Çerçeveli</string>
+    <string name="theme_modern_design">Modern Tasarım</string>
+    <string name="theme_label">Etiket</string>
+    
+    <!-- Dialog Preview -->
+    <string name="dialog_title">Dialog Başlığı</string>
+    <string name="dialog_message">Bu, kullanıcıya bilgi göstermek için kullanılabilecek örnek bir dialog mesajıdır.</string>
+    <string name="dialog_fullscreen_title">Tam Ekran Dialog</string>
+    <string name="dialog_fullscreen_message">Bu, daha karmaşık içerik için kullanılabilecek tam ekran bir dialogdur.</string>
+</resources>

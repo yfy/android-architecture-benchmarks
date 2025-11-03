@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_chat_impl_chat_list_title">Messages</string>
+    <string name="feature_chat_impl_chat_detail_title">Chat</string>
+    <string name="feature_chat_impl_send_message">Send message</string>
+    <string name="feature_chat_impl_type_message">Type a message...</string>
+    <string name="feature_chat_impl_loading">Loading...</string>
+    <string name="feature_chat_impl_error_loading_chats">Error loading chats</string>
+    <string name="feature_chat_impl_error_loading_messages">Error loading messages</string>
+    <string name="feature_chat_impl_error_sending_message">Error sending message</string>
+    <string name="feature_chat_impl_no_messages">No messages yet</string>
+    <string name="feature_chat_impl_online">Online</string>
+    <string name="feature_chat_impl_last_seen">Last seen</string>
+    <string name="feature_chat_impl_typing">typing...</string>
+    <string name="feature_chat_impl_message_delivered">Delivered</string>
+    <string name="feature_chat_impl_message_read">Read</string>
+    <string name="feature_chat_impl_new_message">New message</string>
+</resources>

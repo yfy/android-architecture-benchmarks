@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Mock Product 1",
+      "price": 29.99,
+      "image": "https://via.placeholder.com/300"
+    }
+  ]
+} 

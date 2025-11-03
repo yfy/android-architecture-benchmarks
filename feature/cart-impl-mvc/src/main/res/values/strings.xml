@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_cart_impl_cart_title">Shopping Cart</string>
+    <string name="feature_cart_impl_checkout_title">Checkout</string>
+    <string name="feature_cart_impl_total">Total</string>
+    <string name="feature_cart_impl_proceed_to_checkout">Proceed to Checkout</string>
+    <string name="feature_cart_impl_empty_cart">Your cart is empty</string>
+    <string name="feature_cart_impl_loading">Loading...</string>
+    <string name="feature_cart_impl_error_loading_cart">Error loading cart</string>
+    <string name="feature_cart_impl_error_updating_cart">Error updating cart</string>
+    <string name="feature_cart_impl_error_removing_item">Error removing item</string>
+    <string name="feature_cart_impl_address_selection">Address Selection</string>
+    <string name="feature_cart_impl_payment_method">Payment Method</string>
+    <string name="feature_cart_impl_order_confirmation">Order Confirmation</string>
+    <string name="feature_cart_impl_select_address">Select Address</string>
+    <string name="feature_cart_impl_add_new_address">Add New Address</string>
+    <string name="feature_cart_impl_credit_card">Credit Card</string>
+    <string name="feature_cart_impl_debit_card">Debit Card</string>
+    <string name="feature_cart_impl_cash_on_delivery">Cash on Delivery</string>
+    <string name="feature_cart_impl_place_order">Place Order</string>
+    <string name="feature_cart_impl_order_success">Order placed successfully!</string>
+    <string name="feature_cart_impl_order_error">Error placing order</string>
+    <string name="feature_cart_impl_quantity">Quantity</string>
+    <string name="feature_cart_impl_remove">Remove</string>
+    <string name="feature_cart_impl_next">Next</string>
+    <string name="feature_cart_impl_previous">Previous</string>
+    <string name="feature_cart_impl_confirm">Confirm</string>
+</resources>

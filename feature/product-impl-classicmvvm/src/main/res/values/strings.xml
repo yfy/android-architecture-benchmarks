@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_product_impl_product_list_title">Products</string>
+    <string name="feature_product_impl_product_detail_title">Product Details</string>
+    <string name="feature_product_impl_categories">Categories</string>
+    <string name="feature_product_impl_all_categories">All</string>
+    <string name="feature_product_impl_price">Price</string>
+    <string name="feature_product_impl_rating">Rating</string>
+    <string name="feature_product_impl_reviews">reviews</string>
+    <string name="feature_product_impl_add_to_cart">Add to Cart</string>
+    <string name="feature_product_impl_out_of_stock">Out of Stock</string>
+    <string name="feature_product_impl_loading">Loading...</string>
+    <string name="feature_product_impl_error_loading_products">Error loading products</string>
+    <string name="feature_product_impl_error_loading_categories">Error loading categories</string>
+    <string name="feature_product_impl_error_loading_product_detail">Error loading product details</string>
+    <string name="feature_product_impl_pull_to_refresh">Pull to refresh</string>
+    <string name="feature_product_impl_free_shipping">Free Shipping</string>
+    <string name="feature_product_impl_in_stock">In Stock</string>
+    <string name="feature_product_impl_features">Features</string>
+    <string name="feature_product_impl_description">Description</string>
+    <string name="feature_product_impl_seller">Seller</string>
+</resources>
