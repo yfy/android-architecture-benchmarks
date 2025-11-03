@@ -93,14 +93,12 @@ Real-time messaging with:
 - Chat detail with message history
 - Real-time message streaming
 - Send/receive messages
-- Read status updates
 
 ### 3. Product List Feature
 E-commerce product browsing with:
 - Product list with grid view
 - Category filtering
 - Pagination
-- Search functionality
 - Product details
 
 ## 🚀 Getting Started
