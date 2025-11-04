@@ -147,13 +147,10 @@ In `app/build.gradle.kts`, locate the dependency section and configure it as fol
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/yfy/android-architecture-benchmarks
 
 # Build the project
 ./gradlew assembleDebug
-
-# Run all unit tests
-./gradlew test
 
 # Run benchmarks (see Benchmark section below)
 ./gradlew :benchmark:connectedCheck
