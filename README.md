@@ -116,6 +116,10 @@ E-commerce product browsing with:
 
 #### Configuring Architecture Implementation
 
+You can configure the architecture in two ways:
+
+##### Option 1: Manual Configuration
+
 In `app/build.gradle.kts`, locate the dependency section and configure it as follows. **Uncomment only the architecture you want to test** for each feature (Product, Cart, Chat), and keep the other 4 architectures commented out:
 
 ```kotlin
@@ -143,6 +147,50 @@ In `app/build.gradle.kts`, locate the dependency section and configure it as fol
 
 **Example**: To test MVP architecture, uncomment all `*Mvp` implementations and keep others commented.
 
+##### Option 2: Automated Script (Recommended)
+
+Use the provided automation script to automatically configure and run benchmarks across all architectures. The script handles:
+- **Automatic BuildConfig updates** in both `app` and `benchmark` modules
+- **Automatic dependency management** in `app/build.gradle.kts`
+- **State management** to resume from failures
+- **Connection monitoring** for WiFi ADB (energy mode)
+
+**Benchmark Modes:**
+- **General Mode** (default): Runs `BenchmarkTestSuite` with all benchmarks (Startup, Rendering, Interaction, Memory). Works with USB or WiFi ADB connection.
+- **Energy Mode** (`--energy`): Runs only `EnergyBenchmark` tests for power consumption measurement. Requires WiFi ADB connection and device must be unplugged.
+
+**Usage Examples:**
+
+```bash
+# Run all architectures in general mode (BenchmarkTestSuite)
+./scripts/run_benchmarks.sh
+
+# Run all architectures in energy mode (EnergyBenchmark only)
+./scripts/run_benchmarks.sh --energy
+
+# Run single architecture in general mode
+./scripts/run_benchmarks.sh -a mvi
+
+# Run single architecture in energy mode
+./scripts/run_benchmarks.sh --energy -a mvi
+
+# Clean start (delete previous results and state)
+./scripts/run_benchmarks.sh -c
+
+# Clean start with energy mode
+./scripts/run_benchmarks.sh --energy -c
+```
+
+**Script Features:**
+- Automatically iterates through all 5 architectures (classicmvvm, singlestatemvvm, mvc, mvp, mvi)
+- Updates BuildConfig and dependencies for each architecture
+- Builds and runs benchmarks with retry logic (up to 3 retries)
+- Includes cooldown periods: 2 minutes between retries, 5 minutes between architectures
+- Manages state to resume from failures
+- Monitors ADB connection (WiFi ADB monitoring for energy mode only)
+
+For detailed script documentation, see [`scripts/README.md`](scripts/README.md).
+
 ### Build
 
 ```bash
@@ -160,7 +208,25 @@ git clone https://github.com/yfy/android-architecture-benchmarks
 
 Benchmarks are configured to run using `BenchmarkTestSuite` class. **All modules must use the `mockRelease` build variant** for accurate benchmarking.
 
-1. **Select Architecture**: Configure `app/build.gradle.kts` as described above
+#### Using the Automation Script (Recommended)
+
+The easiest way to run benchmarks across all architectures is using the automation script:
+
+```bash
+# General mode - runs BenchmarkTestSuite (all benchmarks)
+./scripts/run_benchmarks.sh
+
+# Energy mode - runs only EnergyBenchmark (requires WiFi ADB, device unplugged)
+./scripts/run_benchmarks.sh --energy
+```
+
+The script automatically handles architecture configuration, building, and running benchmarks. See [Architecture Configuration](#-architecture-configuration) section above for more details.
+
+#### Manual Execution
+
+If you prefer to run benchmarks manually:
+
+1. **Select Architecture**: Configure `app/build.gradle.kts` as described in the [Architecture Configuration](#-architecture-configuration) section
 2. **Select Build Variant**: Ensure `mockRelease` is selected for all modules (especially the `app` module)
 3. **Run Benchmarks**: Execute `BenchmarkTestSuite` using Android Studio's test runner or via Gradle:
 

@@ -1,23 +1,29 @@
 package com.yfy.basearchitecture.benchmark.utils
+
+import com.yfy.basearchitecture.benchmark.BuildConfig
+
 /**
  * Architecture Configuration for Benchmarks
  *
- * IMPORTANT: Change this value before running benchmarks for different architectures
+ * Architecture is automatically read from BuildConfig.CURRENT_ARCHITECTURE
+ * which is set in benchmark/build.gradle.kts
  *
  * Available architectures:
- * - CLASSIC_MVVM: Classic MVVM with ViewModel
- * - SINGLE_STATE_MVVM: Single-State MVVM
+ * - CLASSICMVVM: Classic MVVM with ViewModel
+ * - SINGLESTATEMVVM: Single-State MVVM
  * - MVC: Model-View-Controller
  * - MVP: Model-View-Presenter
  * - MVI: Model-View-Intent
  */
 object ArchitectureConfig {
 
-    val CURRENT_ARCHITECTURE = Architecture.MVP
+    val CURRENT_ARCHITECTURE = Architecture.valueOf(
+        BuildConfig.CURRENT_ARCHITECTURE.uppercase()
+    )
 
     enum class Architecture(private val moduleName: String, private val displayName: String) {
-        CLASSIC_MVVM("classicmvvm", "Classic MVVM"),
-        SINGLE_STATE_MVVM("singlestatemvvm", "Single-State MVVM"),
+        CLASSICMVVM("classicmvvm", "Classic MVVM"),
+        SINGLESTATEMVVM("singlestatemvvm", "Single-State MVVM"),
         MVC("mvc", "MVC"),
         MVP("mvp", "MVP"),
         MVI("mvi", "MVI");

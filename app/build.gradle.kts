@@ -19,6 +19,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "com.yfy.basearchitecture.benchmark.YfyTestRunner"
+        
+        buildConfigField("String", "CURRENT_ARCHITECTURE", "\"classicmvvm\"")
+    }
+    
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {
@@ -119,22 +125,22 @@ dependencies {
 
     //product
     //implementation(projects.feature.productImpl)
-    implementation(projects.feature.productImplMvp)
+    //implementation(projects.feature.productImplMvp)
     //implementation(projects.feature.productImplMvc)
-    //implementation(projects.feature.productImplClassicmvvm)
+    implementation(projects.feature.productImplClassicmvvm)
     //implementation(projects.feature.productImplMvi)
 
     //cart
     //implementation(projects.feature.cartImpl)
-    implementation(projects.feature.cartImplMvp)
+    //implementation(projects.feature.cartImplMvp)
     //implementation(projects.feature.cartImplMvc)
-    //implementation(projects.feature.cartImplClassicmvvm)
+    implementation(projects.feature.cartImplClassicmvvm)
     //implementation(projects.feature.cartImplMvi)
 
     //chat
     //implementation(projects.feature.chatImpl)
-    implementation(projects.feature.chatImplMvp)
+    //implementation(projects.feature.chatImplMvp)
     //implementation(projects.feature.chatImplMvc)
-    //implementation(projects.feature.chatImplClassicmvvm)
+    implementation(projects.feature.chatImplClassicmvvm)
     //implementation(projects.feature.chatImplMvi)
 }

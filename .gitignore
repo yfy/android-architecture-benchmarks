@@ -41,3 +41,8 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Benchmark automation files
+benchmark_state.json
+benchmark_results/
+energy_benchmark_automation.log

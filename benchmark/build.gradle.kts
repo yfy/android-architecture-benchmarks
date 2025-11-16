@@ -9,6 +9,8 @@ android {
     defaultConfig {
         minSdk = 28
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        
+        buildConfigField("String", "CURRENT_ARCHITECTURE", "\"classicmvvm\"")
     }
 
     buildFeatures {
