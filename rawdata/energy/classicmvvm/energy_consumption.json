@@ -1,0 +1,71 @@
+{
+  "architecture": "classicmvvm",
+  "architecture_full": "Classic MVVM (classicmvvm)",
+  "timestamp": "1763155011492",
+  "timestamp_readable": "2025-11-15 00:16:51",
+  "device": "SM-A556E",
+  "package": "com.yfy.basearchitecture.mock",
+  "test_count": 3,
+  "measurement_method": "energy_counter",
+  "results": [
+    {
+      "scenario": "Chat_Streaming",
+      "energy_mWh": 21,7050,
+      "charge_mAh": 5,0000,
+      "average_power_mW": 1276,0766,
+      "duration_sec": 61,23
+,
+      "statistics": {
+        "mean": 30,3805,
+        "median": 21,7050,
+        "std_dev": 10,6509,
+        "cv": 35,06,
+        "min": 21,6675,
+        "max": 43,4900,
+        "ci_95_lower": 20,1634,
+        "ci_95_upper": 40,5976
+      }
+    },
+    {
+      "scenario": "Shopping_Cart",
+      "energy_mWh": 43,0000,
+      "charge_mAh": 10,0000,
+      "average_power_mW": 1703,9263,
+      "duration_sec": 90,85
+,
+      "statistics": {
+        "mean": 38,7320,
+        "median": 43,0000,
+        "std_dev": 8,5761,
+        "cv": 22,14,
+        "min": 21,5800,
+        "max": 43,0800,
+        "ci_95_lower": 30,5052,
+        "ci_95_upper": 46,9588
+      }
+    },
+    {
+      "scenario": "Product_Browsing",
+      "energy_mWh": 42,5050,
+      "charge_mAh": 10,0000,
+      "average_power_mW": 1619,6323,
+      "duration_sec": 94,48
+,
+      "statistics": {
+        "mean": 34,2050,
+        "median": 42,5050,
+        "std_dev": 10,4151,
+        "cv": 30,45,
+        "min": 21,4250,
+        "max": 42,8500,
+        "ci_95_lower": 24,2141,
+        "ci_95_upper": 44,1959
+      }
+    }
+  ],
+  "summary": {
+    "total_energy_mWh": 107,2100,
+    "total_duration_sec": 246,56,
+    "average_power_mW": 1533,2117
+  }
+}

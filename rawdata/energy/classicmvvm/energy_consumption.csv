@@ -1,0 +1,48 @@
+# ================================================
+# ENERGY CONSUMPTION TEST RESULTS
+# ================================================
+#
+# Architecture: Classic MVVM (classicmvvm)
+# Timestamp: 2025-11-15 00:16:51
+# Device: SM-A556E
+# Package: com.yfy.basearchitecture.mock
+# Test Count: 3
+#
+# METHOD: Hardware Energy Counter
+#
+# ================================================
+
+Scenario,Energy_mWh,Charge_mAh,Avg_Power_mW,Duration_Sec
+Chat_Streaming,21,7050,5,0000,1276,0766,61,23
+Shopping_Cart,43,0000,10,0000,1703,9263,90,85
+Product_Browsing,42,5050,10,0000,1619,6323,94,48
+
+# ================================================
+# STATISTICAL SUMMARY
+# ================================================
+#
+# Chat_Streaming:
+#   Mean: 30,38 ± 10,22 mWh (95% CI)
+#   Median: 21,71 mWh
+#   Std Dev: 10,65 mWh
+#   CV: 35,1%
+#   Range: 21,67 - 43,49 mWh
+#
+# Shopping_Cart:
+#   Mean: 38,73 ± 8,23 mWh (95% CI)
+#   Median: 43,00 mWh
+#   Std Dev: 8,58 mWh
+#   CV: 22,1%
+#   Range: 21,58 - 43,08 mWh
+#
+# Product_Browsing:
+#   Mean: 34,21 ± 9,99 mWh (95% CI)
+#   Median: 42,51 mWh
+#   Std Dev: 10,42 mWh
+#   CV: 30,4%
+#   Range: 21,43 - 42,85 mWh
+#
+# Total Energy: 107,21 mWh
+# Average Power: 1533,21 mW
+#
+# ================================================

@@ -1,0 +1,16 @@
+Architecture,Scenario,Mean_mWh,Median_mWh,StdDev_mWh,CV_percent,Min_mWh,Max_mWh,Spike_Frequency,Spike_Percentage
+classicmvvm,Chat_Streaming,29.68,21.27,11.58,39.0,21.19,42.38,2/5,40.0
+classicmvvm,Product_Browsing,23.1,26.99,6.1,26.4,13.74,27.37,0/5,0.0
+classicmvvm,Shopping_Cart,26.82,28.19,3.24,12.1,21.04,28.42,0/5,0.0
+mvc,Chat_Streaming,21.05,21.08,0.06,0.3,20.95,21.09,0/5,0.0
+mvc,Product_Browsing,31.91,39.81,10.92,34.2,19.95,39.93,3/5,60.0
+mvc,Shopping_Cart,20.97,20.95,0.07,0.3,20.88,21.07,0/5,0.0
+mvi,Chat_Streaming,32.26,40.22,11.04,34.2,20.15,40.37,3/5,60.0
+mvi,Product_Browsing,19.07,19.08,0.05,0.3,19.01,19.13,0/5,0.0
+mvi,Shopping_Cart,25.24,20.09,8.93,35.4,19.64,40.35,1/5,20.0
+mvp,Chat_Streaming,28.84,20.67,11.25,39.0,20.58,41.18,2/5,40.0
+mvp,Product_Browsing,27.2,19.53,10.61,39.0,19.35,39.0,2/5,40.0
+mvp,Shopping_Cart,24.63,20.51,9.4,38.2,20.13,41.44,1/5,20.0
+singlestatemvvm,Chat_Streaming,29.31,27.98,2.98,10.2,27.94,34.63,0/5,0.0
+singlestatemvvm,Product_Browsing,26.73,26.74,0.06,0.2,26.67,26.8,0/5,0.0
+singlestatemvvm,Shopping_Cart,27.58,27.59,0.22,0.8,27.24,27.85,0/5,0.0

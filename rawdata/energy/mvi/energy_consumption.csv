@@ -1,0 +1,48 @@
+# ================================================
+# ENERGY CONSUMPTION TEST RESULTS
+# ================================================
+#
+# Architecture: MVI (mvi)
+# Timestamp: 2025-11-15 15:39:55
+# Device: SM-A556E
+# Package: com.yfy.basearchitecture.mock
+# Test Count: 3
+#
+# METHOD: Hardware Energy Counter
+#
+# ================================================
+
+Scenario,Energy_mWh,Charge_mAh,Avg_Power_mW,Duration_Sec
+Chat_Streaming,41,2500,10,0000,2413,6138,61,53
+Shopping_Cart,20,5100,5,0000,1180,8470,62,53
+Product_Browsing,20,3200,5,0000,1147,0505,63,77
+
+# ================================================
+# STATISTICAL SUMMARY
+# ================================================
+#
+# Chat_Streaming:
+#   Mean: 33,02 ± 9,70 mWh (95% CI)
+#   Median: 41,25 mWh
+#   Std Dev: 10,11 mWh
+#   CV: 30,6%
+#   Range: 20,63 - 41,33 mWh
+#
+# Shopping_Cart:
+#   Mean: 28,61 ± 9,60 mWh (95% CI)
+#   Median: 20,51 mWh
+#   Std Dev: 10,01 mWh
+#   CV: 35,0%
+#   Range: 20,31 - 41,02 mWh
+#
+# Product_Browsing:
+#   Mean: 20,32 ± 0,01 mWh (95% CI)
+#   Median: 20,32 mWh
+#   Std Dev: 0,01 mWh
+#   CV: 0,1%
+#   Range: 20,31 - 20,34 mWh
+#
+# Total Energy: 82,08 mWh
+# Average Power: 1580,50 mW
+#
+# ================================================

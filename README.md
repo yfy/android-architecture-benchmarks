@@ -258,22 +258,44 @@ If you prefer to run benchmarks manually:
 
 ### Raw Data
 
-- **Raw Benchmark Results**: `rawdata/` contains unprocessed raw benchmark results in JSON format for each architecture:
-  - `classicmvvm_result.json`
-  - `mvc_result.json`
-  - `mvp_result.json`
-  - `mvi_result.json`
-  - `singlestatemvvm_result.json`
-  - `runs_detail.json` - Detailed runs data extracted from raw benchmark result files
+Raw benchmark data is organized into two categories:
+
+#### Performance Benchmarks (`rawdata/performance/`)
+
+Contains unprocessed raw benchmark results in JSON format for each architecture:
+- `classicmvvm_result.json`
+- `mvc_result.json`
+- `mvp_result.json`
+- `mvi_result.json`
+- `singlestatemvvm_result.json`
+- `runs_detail.json` - Detailed runs data extracted from raw benchmark result files
+
+#### Energy Benchmarks (`rawdata/energy/`)
+
+Contains raw energy consumption measurements for each architecture:
+- Architecture-specific folders (e.g., `mvc/`, `mvi/`, `mvp/`, etc.)
+- Detailed CSV files per scenario (Chat_Streaming, Shopping_Cart, Product_Browsing)
+- Energy consumption summary files (CSV and JSON)
+- README files with test metadata
 
 ### Processed Data
 
-- **Processed and Consolidated Results**: `analysis_result/` contains processed and consolidated benchmark data extracted from the raw data:
-  - `benchmarks.csv` - Performance benchmark metrics for all architectures
-  - `memory.csv` - Memory usage metrics
-  - `static.csv` - Static code analysis metrics
-  - `memory_phases.csv` - Memory usage by phase
-  - `statistical_tests.csv` - Statistical comparison tests between architectures
+Processed and consolidated results are organized into two categories:
+
+#### Performance Results (`analysis_result/performance/`)
+
+Contains processed performance benchmark data:
+- `benchmarks.csv` - Performance benchmark metrics for all architectures
+- `memory.csv` - Memory usage metrics
+- `static.csv` - Static code analysis metrics
+- `memory_phases.csv` - Memory usage by phase
+- `statistical_tests.csv` - Statistical comparison tests between architectures
+
+#### Energy Results (`analysis_result/energy/`)
+
+Contains normalized energy consumption data:
+- `normalized_energy_data.csv` - All normalized energy measurements (60-second baseline)
+- `normalized_energy_statistics.csv` - Statistical summary per architecture-scenario
 
 ## 🤝 Contributing
 
