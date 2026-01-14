@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="feature_cart_impl_cart_title">Shopping Cart</string>
+    <string name="feature_cart_impl_cart_title">Shopping Cart MVC</string>
     <string name="feature_cart_impl_checkout_title">Checkout</string>
     <string name="feature_cart_impl_total">Total</string>
     <string name="feature_cart_impl_proceed_to_checkout">Proceed to Checkout</string>

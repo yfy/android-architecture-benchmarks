@@ -1,15 +1,16 @@
 # BaseArchitecture: Android Architecture Patterns Benchmark Study
 
-A comprehensive research project comparing 5 Android architecture patterns implemented with Jetpack Compose using **Clean Architecture** principles and the **API/Impl separation technique**. The project includes performance benchmarks, static code analysis, and architectural evaluations. Data is primarily served from mock JSON files, with only images being fetched from API endpoints.
+A comprehensive research project comparing 6 Android architecture patterns (including HYBRID) implemented with Jetpack Compose using **Clean Architecture** principles and the **API/Impl separation technique**. The project includes performance benchmarks, static code analysis, energy consumption analysis, and architectural evaluations. Data is primarily served from mock JSON files, with only images being fetched from API endpoints.
 
 ## 📋 Overview
 
-This project implements the same three features (Cart, Chat, Product List) using **5 different Android architecture patterns**:
+This project implements the same three features (Cart, Chat, Product List) using **6 different Android architecture patterns**:
 - **Classic MVVM** (ViewModel + StateFlow)
 - **MVC** (Model-View-Controller)
 - **MVP** (Model-View-Presenter)
 - **Single-State MVVM** (Custom State Pattern)
 - **MVI** (Model-View-Intent)
+- **HYBRID** (Product: Classic MVVM, Cart: MVP, Chat: Single-State MVVM)
 
 Each implementation features nearly identical UI and business logic, allowing for fair performance and code quality comparisons. The project follows **Clean Architecture** principles with clear separation between domain, data, and presentation layers. The **API/Impl separation technique** is used throughout, allowing for easy swapping between implementations (e.g., mock vs. real implementations).
 
@@ -107,7 +108,7 @@ E-commerce product browsing with:
 
 - Android Studio Hedgehog (2024.1.1) or later
 - JDK 11 or higher
-- Android SDK 36
+- Android SDK 35
 - Gradle 8.x
 
 ### ⚙️ Architecture Configuration
@@ -268,7 +269,7 @@ Contains unprocessed raw benchmark results in JSON format for each architecture:
 - `mvp_result.json`
 - `mvi_result.json`
 - `singlestatemvvm_result.json`
-- `runs_detail.json` - Detailed runs data extracted from raw benchmark result files
+- `hybrid_result.json`
 
 #### Energy Benchmarks (`rawdata/energy/`)
 
@@ -280,22 +281,41 @@ Contains raw energy consumption measurements for each architecture:
 
 ### Processed Data
 
-Processed and consolidated results are organized into two categories:
+#### Comprehensive Analysis Results (`analysis_result/`)
 
-#### Performance Results (`analysis_result/performance/`)
+Complete statistical analysis results for all architectures. Detailed JSON files contain all raw analysis data including statistical tests, rankings, and scores.
 
-Contains processed performance benchmark data:
-- `benchmarks.csv` - Performance benchmark metrics for all architectures
-- `memory.csv` - Memory usage metrics
-- `static.csv` - Static code analysis metrics
-- `memory_phases.csv` - Memory usage by phase
-- `statistical_tests.csv` - Statistical comparison tests between architectures
+**6 Architectures (Including HYBRID):**
 
-#### Energy Results (`analysis_result/energy/`)
+| Architecture | Performance Score | Performance Rank | Memory Score | Memory Rank | Code Quality Score | Code Quality Rank | Energy (mWh) | Energy Rank |
+|--------------|-------------------|-----------------|--------------|-------------|-------------------|-------------------|--------------|-------------|
+| HYBRID | 88.00 | 1 | 73.54 | 2 | N/A | - | 60.54 | 1 |
+| MVP | 81.33 | 2 | 62.50 | 4 | 62.50 | 2 | 60.71 | 2 |
+| Classic MVVM | 68.67 | 3 | 68.23 | 3 | 37.46 | 4 | 76.45 | 3 |
+| Single-State MVVM | 65.33 | 4 | 22.02 | 6 | 41.35 | 3 | 82.31 | 6 |
+| MVI | 59.33 | 5 | 59.18 | 5 | 34.27 | 5 | 79.40 | 4 |
+| MVC | 57.33 | 6 | 78.40 | 1 | 76.77 | 1 | 81.84 | 5 |
 
-Contains normalized energy consumption data:
-- `normalized_energy_data.csv` - All normalized energy measurements (60-second baseline)
-- `normalized_energy_statistics.csv` - Statistical summary per architecture-scenario
+**5 Architectures (Pure Patterns):**
+
+| Architecture | Performance Score | Performance Rank | Memory Score | Memory Rank | Code Quality Score | Code Quality Rank |
+|--------------|-------------------|-----------------|--------------|-------------|-------------------|-------------------|
+| MVP | 70.67 | 1 | 63.91 | 3 | 62.50 | 2 |
+| Classic MVVM | 63.33 | 2 | 76.72 | 2 | 37.46 | 4 |
+| Single-State MVVM | 58.67 | 3 | 33.33 | 5 | 41.35 | 3 |
+| MVI | 55.33 | 4 | 59.18 | 4 | 34.27 | 5 |
+| MVC | 52.00 | 5 | 87.99 | 1 | 76.77 | 1 |
+
+## 📱 App Screenshots
+
+### Product List Screen (Classic MVVM)
+![Product List](docs/screenshots/product_list.png)
+
+### Shopping Cart Screen (MVP)
+![Shopping Cart](docs/screenshots/shopping_cart.png)
+
+### Messages Screen (Single-State MVVM)
+![Messages](docs/screenshots/messages.png)
 
 ## 🤝 Contributing
 

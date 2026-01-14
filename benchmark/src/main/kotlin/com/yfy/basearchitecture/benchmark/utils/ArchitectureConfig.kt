@@ -26,7 +26,8 @@ object ArchitectureConfig {
         SINGLESTATEMVVM("singlestatemvvm", "Single-State MVVM"),
         MVC("mvc", "MVC"),
         MVP("mvp", "MVP"),
-        MVI("mvi", "MVI");
+        MVI("mvi", "MVI"),
+        HYBRID("hybrid","HYBRID");
 
         fun getShortName(): String = moduleName
         fun getFullName(): String = displayName

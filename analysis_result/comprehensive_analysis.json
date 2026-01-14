@@ -1,0 +1,2482 @@
+{
+  "metadata": {
+    "analysis_date": "2025-12-20",
+    "total_tests": 15,
+    "architectures": [
+      "Classic MVVM",
+      "MVC",
+      "MVI",
+      "MVP",
+      "Single-State MVVM"
+    ],
+    "data_source": "rawdata/performance/*.json",
+    "statistical_methods": {
+      "friedman": "Nonparametric test for comparing 5+ related groups",
+      "nemenyi": "Post-hoc pairwise comparison after significant Friedman",
+      "cliffs_delta": "Nonparametric effect size measure"
+    }
+  },
+  "statistical_analysis": {
+    "startupCold": {
+      "metric_direction": "lower_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 522.352263,
+          "median": 519.914336,
+          "std": 11.43792982750955,
+          "cv_percent": 2.189696616191275,
+          "min": 505.812148,
+          "max": 550.627109,
+          "n": 15
+        },
+        "MVC": {
+          "mean": 487.24611720000007,
+          "median": 491.340586,
+          "std": 21.080045108308326,
+          "cv_percent": 4.326364924044247,
+          "min": 449.118477,
+          "max": 538.711953,
+          "n": 15
+        },
+        "MVI": {
+          "mean": 533.5768882,
+          "median": 529.7925,
+          "std": 17.1765553308657,
+          "cv_percent": 3.2191340574757863,
+          "min": 506.937227,
+          "max": 569.01832,
+          "n": 15
+        },
+        "MVP": {
+          "mean": 516.8281873333333,
+          "median": 516.790508,
+          "std": 18.07742535841341,
+          "cv_percent": 3.497763048042541,
+          "min": 487.130195,
+          "max": 544.28043,
+          "n": 15
+        },
+        "Single-State MVVM": {
+          "mean": 529.6748281333333,
+          "median": 522.643711,
+          "std": 22.829240579871943,
+          "cv_percent": 4.310048234749266,
+          "min": 491.459648,
+          "max": 575.258008,
+          "n": 15
+        }
+      },
+      "friedman": {
+        "chi_squared": 34.133333333333326,
+        "df": 4,
+        "p_value": 6.997112780691721e-07,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.007260237960608484,
+          "significant": true
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.18188672021530738,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.9281849208997692,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.9281849208997692,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 2.9717867577883084e-07,
+          "significant": true
+        },
+        "MVC vs MVP": {
+          "p_value": 0.08190700465078271,
+          "significant": false
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.00031146063576958927,
+          "significant": true
+        },
+        "MVI vs MVP": {
+          "p_value": 0.02250552932048111,
+          "significant": true
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 0.6369291684134786,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.48664882664351017,
+          "significant": false
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.8666666666666667,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.3688888888888889,
+          "effect": "medium"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.23555555555555555,
+          "effect": "small"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": -0.24444444444444444,
+          "effect": "small"
+        },
+        "MVC vs MVI": {
+          "delta": -0.92,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": -0.7422222222222222,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.8488888888888889,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": 0.5111111111111111,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": 0.19111111111111112,
+          "effect": "small"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": -0.3422222222222222,
+          "effect": "medium"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 519.914336,
+          "rank": 3.0
+        },
+        "MVC": {
+          "median": 491.340586,
+          "rank": 1.0
+        },
+        "MVI": {
+          "median": 529.7925,
+          "rank": 5.0
+        },
+        "MVP": {
+          "median": 516.790508,
+          "rank": 2.0
+        },
+        "Single-State MVVM": {
+          "median": 522.643711,
+          "rank": 4.0
+        }
+      }
+    },
+    "startupWarm": {
+      "metric_direction": "lower_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 99.02351306666667,
+          "median": 102.167461,
+          "std": 10.86802104182383,
+          "cv_percent": 10.975192361138546,
+          "min": 83.533203,
+          "max": 115.057461,
+          "n": 15
+        },
+        "MVC": {
+          "mean": 106.9827422,
+          "median": 103.472344,
+          "std": 11.728335441542761,
+          "cv_percent": 10.962829331498254,
+          "min": 88.416797,
+          "max": 135.068477,
+          "n": 15
+        },
+        "MVI": {
+          "mean": 97.0692708,
+          "median": 100.479766,
+          "std": 10.096355099379911,
+          "cv_percent": 10.401185685408395,
+          "min": 78.385156,
+          "max": 108.704844,
+          "n": 15
+        },
+        "MVP": {
+          "mean": 94.24150253333332,
+          "median": 91.923984,
+          "std": 11.020606199255822,
+          "cv_percent": 11.69400519198834,
+          "min": 79.358867,
+          "max": 113.82457,
+          "n": 15
+        },
+        "Single-State MVVM": {
+          "mean": 98.89255179999999,
+          "median": 102.919179,
+          "std": 10.609724689469605,
+          "cv_percent": 10.728537686970279,
+          "min": 81.559726,
+          "max": 110.128437,
+          "n": 15
+        }
+      },
+      "friedman": {
+        "chi_squared": 5.386666666666656,
+        "df": 4,
+        "p_value": 0.24987263756280068,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": -0.3244444444444444,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 0.1288888888888889,
+          "effect": "negligible"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.25333333333333335,
+          "effect": "small"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.057777777777777775,
+          "effect": "negligible"
+        },
+        "MVC vs MVI": {
+          "delta": 0.3688888888888889,
+          "effect": "medium"
+        },
+        "MVC vs MVP": {
+          "delta": 0.5288888888888889,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": 0.23555555555555555,
+          "effect": "small"
+        },
+        "MVI vs MVP": {
+          "delta": 0.18222222222222223,
+          "effect": "small"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.13777777777777778,
+          "effect": "negligible"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": -0.26222222222222225,
+          "effect": "small"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 102.167461,
+          "rank": 3.0
+        },
+        "MVC": {
+          "median": 103.472344,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 100.479766,
+          "rank": 2.0
+        },
+        "MVP": {
+          "median": 91.923984,
+          "rank": 1.0
+        },
+        "Single-State MVVM": {
+          "median": 102.919179,
+          "rank": 4.0
+        }
+      }
+    },
+    "productListScrollAndPagination": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 1975.4,
+          "median": 1921.0,
+          "std": 128.830508809055,
+          "cv_percent": 6.521742877850309,
+          "min": 1837.0,
+          "max": 2148.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 2045.4,
+          "median": 2016.0,
+          "std": 60.24367186684424,
+          "cv_percent": 2.94532472214942,
+          "min": 1986.0,
+          "max": 2133.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 2000.6,
+          "median": 1967.0,
+          "std": 113.84990118572786,
+          "cv_percent": 5.6907878229395115,
+          "min": 1912.0,
+          "max": 2200.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 2081.6,
+          "median": 2033.0,
+          "std": 100.1389035290481,
+          "cv_percent": 4.810669846706769,
+          "min": 1981.0,
+          "max": 2233.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 2043.6,
+          "median": 2043.0,
+          "std": 117.7234046398591,
+          "cv_percent": 5.760589383434092,
+          "min": 1879.0,
+          "max": 2185.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 3.3599999999999994,
+        "df": 4,
+        "p_value": 0.499482255785619,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": -0.36,
+          "effect": "medium"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.28,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -0.44,
+          "effect": "medium"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": -0.28,
+          "effect": "small"
+        },
+        "MVC vs MVI": {
+          "delta": 0.6,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": -0.2,
+          "effect": "small"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "MVI vs MVP": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.28,
+          "effect": "small"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.12,
+          "effect": "negligible"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 1921.0,
+          "rank": 5.0
+        },
+        "MVC": {
+          "median": 2016.0,
+          "rank": 3.0
+        },
+        "MVI": {
+          "median": 1967.0,
+          "rank": 4.0
+        },
+        "MVP": {
+          "median": 2033.0,
+          "rank": 2.0
+        },
+        "Single-State MVVM": {
+          "median": 2043.0,
+          "rank": 1.0
+        }
+      }
+    },
+    "productListRapidScrolling": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 4120.8,
+          "median": 4210.0,
+          "std": 218.097913791031,
+          "cv_percent": 5.2926109927934135,
+          "min": 3873.0,
+          "max": 4320.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 4054.8,
+          "median": 4116.0,
+          "std": 212.53164470261834,
+          "cv_percent": 5.241482803162137,
+          "min": 3768.0,
+          "max": 4323.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 4059.0,
+          "median": 4116.0,
+          "std": 217.5718272203458,
+          "cv_percent": 5.360232254751067,
+          "min": 3825.0,
+          "max": 4329.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 4124.0,
+          "median": 4105.0,
+          "std": 92.23611006541852,
+          "cv_percent": 2.2365691092487516,
+          "min": 4036.0,
+          "max": 4277.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 4062.2,
+          "median": 4051.0,
+          "std": 106.71316694766396,
+          "cv_percent": 2.626979640285165,
+          "min": 3952.0,
+          "max": 4237.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 0.12121212121212581,
+        "df": 4,
+        "p_value": 0.998235997102095,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.12,
+          "effect": "negligible"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 0.28,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.12,
+          "effect": "negligible"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.12,
+          "effect": "negligible"
+        },
+        "MVC vs MVI": {
+          "delta": -0.08,
+          "effect": "negligible"
+        },
+        "MVC vs MVP": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": 0.04,
+          "effect": "negligible"
+        },
+        "MVI vs MVP": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": 0.04,
+          "effect": "negligible"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.52,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 4210.0,
+          "rank": 1.0
+        },
+        "MVC": {
+          "median": 4116.0,
+          "rank": 2.5
+        },
+        "MVI": {
+          "median": 4116.0,
+          "rank": 2.5
+        },
+        "MVP": {
+          "median": 4105.0,
+          "rank": 4.0
+        },
+        "Single-State MVVM": {
+          "median": 4051.0,
+          "rank": 5.0
+        }
+      }
+    },
+    "productListCategoryFiltering": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 7122.8,
+          "median": 7175.0,
+          "std": 157.08978324512387,
+          "cv_percent": 2.2054498686629396,
+          "min": 6861.0,
+          "max": 7273.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 6973.4,
+          "median": 6964.0,
+          "std": 177.5325322300113,
+          "cv_percent": 2.545853274299643,
+          "min": 6770.0,
+          "max": 7176.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 7210.0,
+          "median": 7268.0,
+          "std": 141.9559790921115,
+          "cv_percent": 1.9688762703482872,
+          "min": 7017.0,
+          "max": 7362.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 7389.0,
+          "median": 7410.0,
+          "std": 224.6630810792018,
+          "cv_percent": 3.040507255098143,
+          "min": 7017.0,
+          "max": 7585.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 7048.0,
+          "median": 7070.0,
+          "std": 202.8151868080889,
+          "cv_percent": 2.877627508627822,
+          "min": 6735.0,
+          "max": 7269.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 6.8799999999999955,
+        "df": 4,
+        "p_value": 0.14236720285570206,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.52,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.28,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.36,
+          "effect": "medium"
+        },
+        "MVC vs MVI": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": -0.84,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.2,
+          "effect": "small"
+        },
+        "MVI vs MVP": {
+          "delta": -0.64,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": 0.52,
+          "effect": "large"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.76,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 7175.0,
+          "rank": 3.0
+        },
+        "MVC": {
+          "median": 6964.0,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 7268.0,
+          "rank": 2.0
+        },
+        "MVP": {
+          "median": 7410.0,
+          "rank": 1.0
+        },
+        "Single-State MVVM": {
+          "median": 7070.0,
+          "rank": 4.0
+        }
+      }
+    },
+    "cartQuantityUpdatesWithDynamicSetup": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 473.4,
+          "median": 471.0,
+          "std": 7.162401831787993,
+          "cv_percent": 1.5129703911677215,
+          "min": 466.0,
+          "max": 481.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 198.2,
+          "median": 201.0,
+          "std": 10.183319694480774,
+          "cv_percent": 5.137900955842975,
+          "min": 182.0,
+          "max": 209.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 446.0,
+          "median": 442.0,
+          "std": 9.273618495495704,
+          "cv_percent": 2.0792866581828933,
+          "min": 438.0,
+          "max": 456.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 598.4,
+          "median": 594.0,
+          "std": 7.127411872482185,
+          "cv_percent": 1.1910781872463545,
+          "min": 592.0,
+          "max": 608.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 447.2,
+          "median": 453.0,
+          "std": 18.074844397670482,
+          "cv_percent": 4.041780947600734,
+          "min": 417.0,
+          "max": 464.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 19.040000000000006,
+        "df": 4,
+        "p_value": 0.0007718488689673323,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.022659414002195732,
+          "significant": true
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.49732480971524573,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.8554745643109434,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.6276588981064817,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 0.6276588981064817,
+          "significant": false
+        },
+        "MVC vs MVP": {
+          "p_value": 0.000605826207939475,
+          "significant": true
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.49732480971524573,
+          "significant": false
+        },
+        "MVI vs MVP": {
+          "p_value": 0.07032412785494335,
+          "significant": false
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 0.9996441964315063,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.11523272364644777,
+          "significant": false
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "MVC vs MVI": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.2,
+          "effect": "small"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 1.0,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 471.0,
+          "rank": 2.0
+        },
+        "MVC": {
+          "median": 201.0,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 442.0,
+          "rank": 4.0
+        },
+        "MVP": {
+          "median": 594.0,
+          "rank": 1.0
+        },
+        "Single-State MVVM": {
+          "median": 453.0,
+          "rank": 3.0
+        }
+      }
+    },
+    "cartCheckoutFlow": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 1228.6,
+          "median": 1229.0,
+          "std": 6.268971207462992,
+          "cv_percent": 0.5102532319276406,
+          "min": 1222.0,
+          "max": 1237.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 1334.0,
+          "median": 1340.0,
+          "std": 13.982131454109563,
+          "cv_percent": 1.0481357911626359,
+          "min": 1314.0,
+          "max": 1346.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 1225.4,
+          "median": 1226.0,
+          "std": 9.126883367283709,
+          "cv_percent": 0.7448085006760004,
+          "min": 1211.0,
+          "max": 1236.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 1311.6,
+          "median": 1315.0,
+          "std": 9.208691546577072,
+          "cv_percent": 0.7020960313035279,
+          "min": 1297.0,
+          "max": 1321.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 1245.8,
+          "median": 1230.0,
+          "std": 37.78491762595229,
+          "cv_percent": 3.0329842371128826,
+          "min": 1224.0,
+          "max": 1313.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 16.0,
+        "df": 4,
+        "p_value": 0.003019163651122605,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.04087634015210606,
+          "significant": true
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.9946149695873463,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.17959696466629393,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.9946149695873463,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 0.011994137878661326,
+          "significant": true
+        },
+        "MVC vs MVP": {
+          "p_value": 0.9751233422787462,
+          "significant": false
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.11523272364644777,
+          "significant": false
+        },
+        "MVI vs MVP": {
+          "p_value": 0.07032412785494335,
+          "significant": false
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 0.9306765619254931,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.3734806214642935,
+          "significant": false
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 0.16,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": -0.28,
+          "effect": "small"
+        },
+        "MVC vs MVI": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": 0.76,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.36,
+          "effect": "medium"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.84,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 1229.0,
+          "rank": 4.0
+        },
+        "MVC": {
+          "median": 1340.0,
+          "rank": 1.0
+        },
+        "MVI": {
+          "median": 1226.0,
+          "rank": 5.0
+        },
+        "MVP": {
+          "median": 1315.0,
+          "rank": 2.0
+        },
+        "Single-State MVVM": {
+          "median": 1230.0,
+          "rank": 3.0
+        }
+      }
+    },
+    "chatListRealtimeUpdates": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 2093.2,
+          "median": 2120.0,
+          "std": 86.7623190100403,
+          "cv_percent": 4.144960778236208,
+          "min": 1959.0,
+          "max": 2194.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 1981.0,
+          "median": 1913.0,
+          "std": 129.79791986006555,
+          "cv_percent": 6.552141335692355,
+          "min": 1884.0,
+          "max": 2201.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 1988.6,
+          "median": 1941.0,
+          "std": 115.46774441375392,
+          "cv_percent": 5.806484180516641,
+          "min": 1880.0,
+          "max": 2138.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 1942.2,
+          "median": 1974.0,
+          "std": 92.72378335680658,
+          "cv_percent": 4.774162463021655,
+          "min": 1815.0,
+          "max": 2055.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 2055.6,
+          "median": 2052.0,
+          "std": 56.65068402058355,
+          "cv_percent": 2.755919635171412,
+          "min": 1975.0,
+          "max": 2120.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 5.280000000000001,
+        "df": 4,
+        "p_value": 0.259755021185245,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.52,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 0.52,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.76,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.4,
+          "effect": "medium"
+        },
+        "MVC vs MVI": {
+          "delta": 0.04,
+          "effect": "negligible"
+        },
+        "MVC vs MVP": {
+          "delta": 0.12,
+          "effect": "negligible"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.52,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": 0.2,
+          "effect": "small"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.36,
+          "effect": "medium"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": -0.68,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 2120.0,
+          "rank": 1.0
+        },
+        "MVC": {
+          "median": 1913.0,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 1941.0,
+          "rank": 4.0
+        },
+        "MVP": {
+          "median": 1974.0,
+          "rank": 3.0
+        },
+        "Single-State MVVM": {
+          "median": 2052.0,
+          "rank": 2.0
+        }
+      }
+    },
+    "chatDetailMessageStreamAndSending": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 959.6,
+          "median": 963.0,
+          "std": 13.46476884316994,
+          "cv_percent": 1.403164739805121,
+          "min": 940.0,
+          "max": 976.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 902.4,
+          "median": 905.0,
+          "std": 11.238327277669038,
+          "cv_percent": 1.2453820121530406,
+          "min": 890.0,
+          "max": 918.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 923.8,
+          "median": 924.0,
+          "std": 21.66102490649969,
+          "cv_percent": 2.344774291675654,
+          "min": 900.0,
+          "max": 957.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 940.8,
+          "median": 934.0,
+          "std": 13.682105101189654,
+          "cv_percent": 1.4543053891570636,
+          "min": 930.0,
+          "max": 964.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 929.8,
+          "median": 933.0,
+          "std": 18.322117781522966,
+          "cv_percent": 1.9705439644571916,
+          "min": 907.0,
+          "max": 955.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 14.424242424242426,
+        "df": 4,
+        "p_value": 0.006057185942307743,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.004246221220126967,
+          "significant": true
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.07032412785494335,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.7514240977400496,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.433877993933544,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 0.8969927907918006,
+          "significant": false
+        },
+        "MVC vs MVP": {
+          "p_value": 0.14477468277747674,
+          "significant": false
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.3734806214642936,
+          "significant": false
+        },
+        "MVI vs MVP": {
+          "p_value": 0.6276588981064817,
+          "significant": false
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 0.8969927907918007,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.9873857305913032,
+          "significant": false
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 0.84,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.68,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.84,
+          "effect": "large"
+        },
+        "MVC vs MVI": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.88,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.2,
+          "effect": "small"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.36,
+          "effect": "medium"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 963.0,
+          "rank": 1.0
+        },
+        "MVC": {
+          "median": 905.0,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 924.0,
+          "rank": 4.0
+        },
+        "MVP": {
+          "median": 934.0,
+          "rank": 2.0
+        },
+        "Single-State MVVM": {
+          "median": 933.0,
+          "rank": 3.0
+        }
+      }
+    },
+    "chatRapidSwitching": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 5328.8,
+          "median": 5318.0,
+          "std": 25.97498796919837,
+          "cv_percent": 0.487445352972496,
+          "min": 5302.0,
+          "max": 5359.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 5280.0,
+          "median": 5274.0,
+          "std": 19.11805429430516,
+          "cv_percent": 0.3620843616345675,
+          "min": 5258.0,
+          "max": 5305.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 5495.4,
+          "median": 5438.0,
+          "std": 101.69709927033317,
+          "cv_percent": 1.8505859313304431,
+          "min": 5415.0,
+          "max": 5659.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 5514.4,
+          "median": 5519.0,
+          "std": 82.83900047682855,
+          "cv_percent": 1.5022305323666865,
+          "min": 5402.0,
+          "max": 5634.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 5468.2,
+          "median": 5462.0,
+          "std": 51.7706480546651,
+          "cv_percent": 0.9467584955682876,
+          "min": 5410.0,
+          "max": 5552.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 16.480000000000004,
+        "df": 4,
+        "p_value": 0.00243829046496159,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.8554745643109434,
+          "significant": false
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.3734806214642937,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.11523272364644743,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.3734806214642937,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 0.04087634015210606,
+          "significant": true
+        },
+        "MVC vs MVP": {
+          "p_value": 0.006069083688216903,
+          "significant": true
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.04087634015210606,
+          "significant": true
+        },
+        "MVI vs MVP": {
+          "p_value": 0.9751233422787461,
+          "significant": false
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 1.0,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.9751233422787461,
+          "significant": false
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.92,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs MVI": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.36,
+          "effect": "medium"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 5318.0,
+          "rank": 4.0
+        },
+        "MVC": {
+          "median": 5274.0,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 5438.0,
+          "rank": 3.0
+        },
+        "MVP": {
+          "median": 5519.0,
+          "rank": 1.0
+        },
+        "Single-State MVVM": {
+          "median": 5462.0,
+          "rank": 2.0
+        }
+      }
+    },
+    "continuousScrollJankTest": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 364.6,
+          "median": 350.0,
+          "std": 21.91574776273901,
+          "cv_percent": 6.010901745128637,
+          "min": 347.0,
+          "max": 391.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 359.6,
+          "median": 341.0,
+          "std": 33.886575513025804,
+          "cv_percent": 9.423408095947108,
+          "min": 332.0,
+          "max": 397.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 369.2,
+          "median": 388.0,
+          "std": 37.21155734445953,
+          "cv_percent": 10.078970028293481,
+          "min": 322.0,
+          "max": 406.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 362.4,
+          "median": 339.0,
+          "std": 34.947102884216314,
+          "cv_percent": 9.643240310214216,
+          "min": 336.0,
+          "max": 405.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 338.4,
+          "median": 330.0,
+          "std": 29.50084744545485,
+          "cv_percent": 8.717744516978383,
+          "min": 313.0,
+          "max": 388.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 2.141414141414146,
+        "df": 4,
+        "p_value": 0.7097681286133575,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.2,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.12,
+          "effect": "negligible"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.2,
+          "effect": "small"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.68,
+          "effect": "large"
+        },
+        "MVC vs MVI": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "MVC vs MVP": {
+          "delta": -0.16,
+          "effect": "small"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": 0.6,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": 0.04,
+          "effect": "negligible"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": 0.56,
+          "effect": "large"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 0.52,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 350.0,
+          "rank": 2.0
+        },
+        "MVC": {
+          "median": 341.0,
+          "rank": 3.0
+        },
+        "MVI": {
+          "median": 388.0,
+          "rank": 1.0
+        },
+        "MVP": {
+          "median": 339.0,
+          "rank": 4.0
+        },
+        "Single-State MVVM": {
+          "median": 330.0,
+          "rank": 5.0
+        }
+      }
+    },
+    "flingJankTest": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 4106.6,
+          "median": 4064.0,
+          "std": 116.84091749040658,
+          "cv_percent": 2.8451983999027557,
+          "min": 3989.0,
+          "max": 4240.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 3958.8,
+          "median": 3985.0,
+          "std": 181.63204563072014,
+          "cv_percent": 4.588058139605945,
+          "min": 3701.0,
+          "max": 4170.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 4099.8,
+          "median": 4103.0,
+          "std": 181.54255699422106,
+          "cv_percent": 4.428083247822358,
+          "min": 3864.0,
+          "max": 4289.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 4226.2,
+          "median": 4243.0,
+          "std": 95.27171668443894,
+          "cv_percent": 2.2543115963380567,
+          "min": 4072.0,
+          "max": 4328.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 4196.6,
+          "median": 4276.0,
+          "std": 168.97425839458506,
+          "cv_percent": 4.026456140556285,
+          "min": 3944.0,
+          "max": 4347.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 6.719999999999999,
+        "df": 4,
+        "p_value": 0.15144572899906025,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": 0.52,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.04,
+          "effect": "negligible"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": -0.44,
+          "effect": "medium"
+        },
+        "MVC vs MVI": {
+          "delta": -0.36,
+          "effect": "medium"
+        },
+        "MVC vs MVP": {
+          "delta": -0.92,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": -0.36,
+          "effect": "medium"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.44,
+          "effect": "medium"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": -0.12,
+          "effect": "negligible"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 4064.0,
+          "rank": 4.0
+        },
+        "MVC": {
+          "median": 3985.0,
+          "rank": 5.0
+        },
+        "MVI": {
+          "median": 4103.0,
+          "rank": 3.0
+        },
+        "MVP": {
+          "median": 4243.0,
+          "rank": 2.0
+        },
+        "Single-State MVVM": {
+          "median": 4276.0,
+          "rank": 1.0
+        }
+      }
+    },
+    "rapidDirectionChangeJankTest": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 368.0,
+          "median": 358.0,
+          "std": 25.099800796022265,
+          "cv_percent": 6.820598042397355,
+          "min": 350.0,
+          "max": 412.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 379.8,
+          "median": 363.0,
+          "std": 26.771253239249,
+          "cv_percent": 7.048776524288836,
+          "min": 359.0,
+          "max": 416.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 377.8,
+          "median": 362.0,
+          "std": 24.4172070474901,
+          "cv_percent": 6.462998159737983,
+          "min": 358.0,
+          "max": 405.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 363.4,
+          "median": 355.0,
+          "std": 29.398979574128077,
+          "cv_percent": 8.089977868499746,
+          "min": 340.0,
+          "max": 413.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 364.4,
+          "median": 357.0,
+          "std": 32.83747858773569,
+          "cv_percent": 9.011382707940639,
+          "min": 338.0,
+          "max": 421.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 2.383838383838383,
+        "df": 4,
+        "p_value": 0.6655498828470954,
+        "significant": false
+      },
+      "nemenyi": {},
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": -0.44,
+          "effect": "medium"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.32,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.2,
+          "effect": "small"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.2,
+          "effect": "small"
+        },
+        "MVC vs MVI": {
+          "delta": 0.08,
+          "effect": "negligible"
+        },
+        "MVC vs MVP": {
+          "delta": 0.44,
+          "effect": "medium"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": 0.48,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": 0.36,
+          "effect": "medium"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": 0.48,
+          "effect": "large"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": -0.04,
+          "effect": "negligible"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 358.0,
+          "rank": 3.0
+        },
+        "MVC": {
+          "median": 363.0,
+          "rank": 1.0
+        },
+        "MVI": {
+          "median": 362.0,
+          "rank": 2.0
+        },
+        "MVP": {
+          "median": 355.0,
+          "rank": 5.0
+        },
+        "Single-State MVVM": {
+          "median": 357.0,
+          "rank": 4.0
+        }
+      }
+    },
+    "cartQuantityUpdatePerformance": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 62.4,
+          "median": 62.0,
+          "std": 3.646916505762094,
+          "cv_percent": 5.8444174771828425,
+          "min": 58.0,
+          "max": 67.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 96.8,
+          "median": 98.0,
+          "std": 7.259476565152614,
+          "cv_percent": 7.499459261521295,
+          "min": 89.0,
+          "max": 106.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 59.6,
+          "median": 60.0,
+          "std": 5.683308895353129,
+          "cv_percent": 9.5357531801227,
+          "min": 54.0,
+          "max": 67.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 91.6,
+          "median": 93.0,
+          "std": 5.594640292279746,
+          "cv_percent": 6.107685908602344,
+          "min": 82.0,
+          "max": 96.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 60.6,
+          "median": 61.0,
+          "std": 4.560701700396552,
+          "cv_percent": 7.52591039669398,
+          "min": 56.0,
+          "max": 66.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 15.55555555555556,
+        "df": 4,
+        "p_value": 0.003677380861380251,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.14477468277747674,
+          "significant": false
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.9751233422787462,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.21994991587375867,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.9982400914368782,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 0.030612572572865315,
+          "significant": true
+        },
+        "MVC vs MVP": {
+          "p_value": 0.9996441964315063,
+          "significant": false
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.07032412785494335,
+          "significant": false
+        },
+        "MVI vs MVP": {
+          "p_value": 0.053938268693068725,
+          "significant": false
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 0.9982400914368781,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.11523272364644743,
+          "significant": false
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": 0.28,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": 0.28,
+          "effect": "small"
+        },
+        "MVC vs MVI": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": 0.36,
+          "effect": "medium"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": 1.0,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.2,
+          "effect": "small"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": 1.0,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 62.0,
+          "rank": 3.0
+        },
+        "MVC": {
+          "median": 98.0,
+          "rank": 1.0
+        },
+        "MVI": {
+          "median": 60.0,
+          "rank": 5.0
+        },
+        "MVP": {
+          "median": 93.0,
+          "rank": 2.0
+        },
+        "Single-State MVVM": {
+          "median": 61.0,
+          "rank": 4.0
+        }
+      }
+    },
+    "categoryFilterPerformance": {
+      "metric_direction": "higher_is_better",
+      "descriptive": {
+        "Classic MVVM": {
+          "mean": 31.0,
+          "median": 31.0,
+          "std": 1.5811388300841898,
+          "cv_percent": 5.100447838981257,
+          "min": 29.0,
+          "max": 33.0,
+          "n": 5
+        },
+        "MVC": {
+          "mean": 33.2,
+          "median": 31.0,
+          "std": 5.06951674225463,
+          "cv_percent": 15.269628741730813,
+          "min": 30.0,
+          "max": 42.0,
+          "n": 5
+        },
+        "MVI": {
+          "mean": 34.4,
+          "median": 34.0,
+          "std": 1.6733200530681511,
+          "cv_percent": 4.864302479849276,
+          "min": 32.0,
+          "max": 36.0,
+          "n": 5
+        },
+        "MVP": {
+          "mean": 27.2,
+          "median": 26.0,
+          "std": 3.3466401061363023,
+          "cv_percent": 12.30382391961876,
+          "min": 25.0,
+          "max": 33.0,
+          "n": 5
+        },
+        "Single-State MVVM": {
+          "mean": 37.8,
+          "median": 38.0,
+          "std": 3.03315017762062,
+          "cv_percent": 8.02420681910217,
+          "min": 34.0,
+          "max": 42.0,
+          "n": 5
+        }
+      },
+      "friedman": {
+        "chi_squared": 13.979381443298971,
+        "df": 4,
+        "p_value": 0.00736115322159027,
+        "significant": true
+      },
+      "nemenyi": {
+        "Classic MVVM vs MVC": {
+          "p_value": 0.930676561925493,
+          "significant": false
+        },
+        "Classic MVVM vs MVI": {
+          "p_value": 0.8066256029368726,
+          "significant": false
+        },
+        "Classic MVVM vs MVP": {
+          "p_value": 0.7514240977400495,
+          "significant": false
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "p_value": 0.1447746827774764,
+          "significant": false
+        },
+        "MVC vs MVI": {
+          "p_value": 0.9982400914368782,
+          "significant": false
+        },
+        "MVC vs MVP": {
+          "p_value": 0.2658885848176523,
+          "significant": false
+        },
+        "MVC vs Single-State MVVM": {
+          "p_value": 0.5624494379172433,
+          "significant": false
+        },
+        "MVI vs MVP": {
+          "p_value": 0.14477468277747674,
+          "significant": false
+        },
+        "MVI vs Single-State MVVM": {
+          "p_value": 0.7514240977400493,
+          "significant": false
+        },
+        "MVP vs Single-State MVVM": {
+          "p_value": 0.004246221220126967,
+          "significant": true
+        }
+      },
+      "cliffs_delta": {
+        "Classic MVVM vs MVC": {
+          "delta": -0.2,
+          "effect": "small"
+        },
+        "Classic MVVM vs MVI": {
+          "delta": -0.88,
+          "effect": "large"
+        },
+        "Classic MVVM vs MVP": {
+          "delta": 0.64,
+          "effect": "large"
+        },
+        "Classic MVVM vs Single-State MVVM": {
+          "delta": -1.0,
+          "effect": "large"
+        },
+        "MVC vs MVI": {
+          "delta": -0.52,
+          "effect": "large"
+        },
+        "MVC vs MVP": {
+          "delta": 0.72,
+          "effect": "large"
+        },
+        "MVC vs Single-State MVVM": {
+          "delta": -0.64,
+          "effect": "large"
+        },
+        "MVI vs MVP": {
+          "delta": 0.92,
+          "effect": "large"
+        },
+        "MVI vs Single-State MVVM": {
+          "delta": -0.68,
+          "effect": "large"
+        },
+        "MVP vs Single-State MVVM": {
+          "delta": -1.0,
+          "effect": "large"
+        }
+      },
+      "ranking": {
+        "Classic MVVM": {
+          "median": 31.0,
+          "rank": 3.5
+        },
+        "MVC": {
+          "median": 31.0,
+          "rank": 3.5
+        },
+        "MVI": {
+          "median": 34.0,
+          "rank": 2.0
+        },
+        "MVP": {
+          "median": 26.0,
+          "rank": 5.0
+        },
+        "Single-State MVVM": {
+          "median": 38.0,
+          "rank": 1.0
+        }
+      }
+    }
+  },
+  "rankings": {
+    "per_test": {
+      "startupCold": [
+        "MVC",
+        "MVP",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVI"
+      ],
+      "startupWarm": [
+        "MVP",
+        "MVI",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVC"
+      ],
+      "productListScrollAndPagination": [
+        "Single-State MVVM",
+        "MVP",
+        "MVC",
+        "MVI",
+        "Classic MVVM"
+      ],
+      "productListRapidScrolling": [
+        "Classic MVVM",
+        "MVC",
+        "MVI",
+        "MVP",
+        "Single-State MVVM"
+      ],
+      "productListCategoryFiltering": [
+        "MVP",
+        "MVI",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVC"
+      ],
+      "cartQuantityUpdatesWithDynamicSetup": [
+        "MVP",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVI",
+        "MVC"
+      ],
+      "cartCheckoutFlow": [
+        "MVC",
+        "MVP",
+        "Single-State MVVM",
+        "Classic MVVM",
+        "MVI"
+      ],
+      "chatListRealtimeUpdates": [
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVP",
+        "MVI",
+        "MVC"
+      ],
+      "chatDetailMessageStreamAndSending": [
+        "Classic MVVM",
+        "MVP",
+        "Single-State MVVM",
+        "MVI",
+        "MVC"
+      ],
+      "chatRapidSwitching": [
+        "MVP",
+        "Single-State MVVM",
+        "MVI",
+        "Classic MVVM",
+        "MVC"
+      ],
+      "continuousScrollJankTest": [
+        "MVI",
+        "Classic MVVM",
+        "MVC",
+        "MVP",
+        "Single-State MVVM"
+      ],
+      "flingJankTest": [
+        "Single-State MVVM",
+        "MVP",
+        "MVI",
+        "Classic MVVM",
+        "MVC"
+      ],
+      "rapidDirectionChangeJankTest": [
+        "MVC",
+        "MVI",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVP"
+      ],
+      "cartQuantityUpdatePerformance": [
+        "MVC",
+        "MVP",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVI"
+      ],
+      "categoryFilterPerformance": [
+        "Single-State MVVM",
+        "MVI",
+        "Classic MVVM",
+        "MVC",
+        "MVP"
+      ]
+    },
+    "average_ranks": {
+      "Classic MVVM": 2.8333333333333335,
+      "MVC": 3.4,
+      "MVI": 3.2333333333333334,
+      "MVP": 2.466666666666667,
+      "Single-State MVVM": 3.066666666666667
+    }
+  },
+  "scores": {
+    "performance": {
+      "formula": "S_perf = 120 - (Avg_Rank \u00d7 20)",
+      "scores": {
+        "Classic MVVM": {
+          "avg_rank": 2.8333333333333335,
+          "score": 63.33333333333333
+        },
+        "MVC": {
+          "avg_rank": 3.4,
+          "score": 52.0
+        },
+        "MVI": {
+          "avg_rank": 3.2333333333333334,
+          "score": 55.33333333333333
+        },
+        "MVP": {
+          "avg_rank": 2.466666666666667,
+          "score": 70.66666666666666
+        },
+        "Single-State MVVM": {
+          "avg_rank": 3.066666666666667,
+          "score": 58.666666666666664
+        }
+      },
+      "ranking": [
+        "MVP",
+        "Classic MVVM",
+        "Single-State MVVM",
+        "MVI",
+        "MVC"
+      ]
+    },
+    "memory": {
+      "formula": "S_mem = ((I_norm + P_norm + G_norm) / 3) \u00d7 100",
+      "raw_data": {
+        "Classic MVVM": {
+          "initial_mb": 30.4,
+          "peak_mb": 38.42,
+          "growth_mb": 0.55
+        },
+        "MVC": {
+          "initial_mb": 30.34,
+          "peak_mb": 37.71,
+          "growth_mb": 0.48
+        },
+        "MVI": {
+          "initial_mb": 29.57,
+          "peak_mb": 38.42,
+          "growth_mb": 1.09
+        },
+        "MVP": {
+          "initial_mb": 30.0,
+          "peak_mb": 38.0,
+          "growth_mb": 1.0
+        },
+        "Single-State MVVM": {
+          "initial_mb": 33.28,
+          "peak_mb": 40.87,
+          "growth_mb": 0.37
+        }
+      },
+      "normalized": {
+        "Classic MVVM": {
+          "i_norm": 0.7762803234501353,
+          "p_norm": 0.775316455696202,
+          "g_norm": 0.75
+        },
+        "MVC": {
+          "i_norm": 0.7924528301886794,
+          "p_norm": 1.0,
+          "g_norm": 0.8472222222222222
+        },
+        "MVI": {
+          "i_norm": 1.0,
+          "p_norm": 0.775316455696202,
+          "g_norm": 0.0
+        },
+        "MVP": {
+          "i_norm": 0.8840970350404314,
+          "p_norm": 0.908227848101266,
+          "g_norm": 0.12500000000000008
+        },
+        "Single-State MVVM": {
+          "i_norm": 0.0,
+          "p_norm": 0.0,
+          "g_norm": 1.0
+        }
+      },
+      "scores": {
+        "Classic MVVM": 76.71989263821123,
+        "MVC": 87.98916841369673,
+        "MVI": 59.1772151898734,
+        "MVP": 63.91082943805658,
+        "Single-State MVVM": 33.33333333333333
+      },
+      "ranking": [
+        "MVC",
+        "Classic MVVM",
+        "MVP",
+        "MVI",
+        "Single-State MVVM"
+      ]
+    },
+    "code_quality": {
+      "formula": "S_code = ((DD_norm + Cog_norm + Cyc_norm + Hotspot) / 4) \u00d7 100",
+      "raw_data": {
+        "Classic MVVM": {
+          "sloc": 2459,
+          "debt_hours": 2.9,
+          "debt_density": 1.1793411956079707,
+          "avg_cog": 2.61,
+          "avg_cyc": 1.95,
+          "max_cyc": 9
+        },
+        "MVC": {
+          "sloc": 2715,
+          "debt_hours": 1.7,
+          "debt_density": 0.6261510128913444,
+          "avg_cog": 1.83,
+          "avg_cyc": 1.75,
+          "max_cyc": 9
+        },
+        "MVI": {
+          "sloc": 2510,
+          "debt_hours": 2.0,
+          "debt_density": 0.7968127490039841,
+          "avg_cog": 2.6,
+          "avg_cyc": 2.38,
+          "max_cyc": 9
+        },
+        "MVP": {
+          "sloc": 3001,
+          "debt_hours": 4.6,
+          "debt_density": 1.5328223925358213,
+          "avg_cog": 1.5,
+          "avg_cyc": 1.61,
+          "max_cyc": 10
+        },
+        "Single-State MVVM": {
+          "sloc": 2442,
+          "debt_hours": 2.0,
+          "debt_density": 0.8190008190008189,
+          "avg_cog": 2.5,
+          "avg_cyc": 2.02,
+          "max_cyc": 14
+        }
+      },
+      "normalized": {
+        "Classic MVVM": {
+          "dd_norm": 0.38986694061795285,
+          "cog_norm": 0.0,
+          "cyc_norm": 0.5584415584415585,
+          "hotspot": 0.55
+        },
+        "MVC": {
+          "dd_norm": 1.0,
+          "cog_norm": 0.7027027027027026,
+          "cyc_norm": 0.8181818181818182,
+          "hotspot": 0.55
+        },
+        "MVI": {
+          "dd_norm": 0.8117711224329598,
+          "cog_norm": 0.009009009009008818,
+          "cyc_norm": 0.0,
+          "hotspot": 0.55
+        },
+        "MVP": {
+          "dd_norm": 0.0,
+          "cog_norm": 1.0,
+          "cyc_norm": 1.0,
+          "hotspot": 0.5
+        },
+        "Single-State MVVM": {
+          "dd_norm": 0.7872991136159007,
+          "cog_norm": 0.099099099099099,
+          "cyc_norm": 0.4675324675324675,
+          "hotspot": 0.30000000000000004
+        }
+      },
+      "scores": {
+        "Classic MVVM": 37.457712476487785,
+        "MVC": 76.77211302211302,
+        "MVI": 34.26950328604922,
+        "MVP": 62.5,
+        "Single-State MVVM": 41.34826700618668
+      },
+      "ranking": [
+        "MVC",
+        "MVP",
+        "Single-State MVVM",
+        "Classic MVVM",
+        "MVI"
+      ]
+    }
+  },
+  "summary": {
+    "dimension_leaders": {
+      "performance": {
+        "winner": "MVP",
+        "score": 70.66666666666666
+      },
+      "memory": {
+        "winner": "MVC",
+        "score": 87.98916841369673
+      },
+      "code_quality": {
+        "winner": "MVC",
+        "score": 76.77211302211302
+      }
+    },
+    "statistical_summary": {
+      "friedman_significant_tests": 7,
+      "friedman_nonsignificant_tests": 8,
+      "total_significant_pairwise": 14,
+      "total_large_effects": 77
+    }
+  },
+  "validation": {
+    "data_completeness": {
+      "Classic MVVM": {
+        "tests_found": 15,
+        "missing": []
+      },
+      "MVC": {
+        "tests_found": 15,
+        "missing": []
+      },
+      "MVI": {
+        "tests_found": 15,
+        "missing": []
+      },
+      "MVP": {
+        "tests_found": 15,
+        "missing": []
+      },
+      "Single-State MVVM": {
+        "tests_found": 15,
+        "missing": []
+      }
+    },
+    "cross_checks": {}
+  }
+}

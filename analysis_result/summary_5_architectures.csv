@@ -1,0 +1,6 @@
+Architecture,Performance_Score,Performance_Rank,Memory_Score,Memory_Rank,Code_Quality_Score,Code_Quality_Rank
+Classic MVVM,63.33,2,76.72,2,37.46,4
+MVC,52.0,5,87.99,1,76.77,1
+MVI,55.33,4,59.18,4,34.27,5
+MVP,70.67,1,63.91,3,62.5,2
+Single-State MVVM,58.67,3,33.33,5,41.35,3

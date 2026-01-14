@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="feature_product_impl_product_list_title">Products</string>
+    <string name="feature_product_impl_product_list_title">Products MVP</string>
     <string name="feature_product_impl_product_detail_title">Product Details</string>
     <string name="feature_product_impl_categories">Categories</string>
     <string name="feature_product_impl_all_categories">All</string>

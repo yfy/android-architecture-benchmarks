@@ -1,0 +1,48 @@
+# ================================================
+# ENERGY CONSUMPTION TEST RESULTS
+# ================================================
+#
+# Architecture: HYBRID (hybrid)
+# Timestamp: 2025-12-27 04:13:02
+# Device: SM-A556E
+# Package: com.yfy.basearchitecture.mock
+# Test Count: 3
+#
+# METHOD: Hardware Energy Counter
+#
+# ================================================
+
+Scenario,Energy_mWh,Charge_mAh,Avg_Power_mW,Duration_Sec
+Chat_Streaming,21,1500,5,0000,1250,6365,60,88
+Shopping_Cart,21,0000,5,0000,1235,6374,61,18
+Product_Browsing,20,7925,5,0000,1165,6259,64,22
+
+# ================================================
+# STATISTICAL SUMMARY
+# ================================================
+#
+# Chat_Streaming:
+#   Mean: 21,12 ± 0,05 mWh (95% CI)
+#   Median: 21,15 mWh
+#   Std Dev: 0,06 mWh
+#   CV: 0,3%
+#   Range: 21,06 - 21,20 mWh
+#
+# Shopping_Cart:
+#   Mean: 29,25 ± 9,83 mWh (95% CI)
+#   Median: 21,00 mWh
+#   Std Dev: 10,24 mWh
+#   CV: 35,0%
+#   Range: 20,76 - 42,06 mWh
+#
+# Product_Browsing:
+#   Mean: 20,79 ± 0,01 mWh (95% CI)
+#   Median: 20,79 mWh
+#   Std Dev: 0,01 mWh
+#   CV: 0,1%
+#   Range: 20,78 - 20,81 mWh
+#
+# Total Energy: 62,94 mWh
+# Average Power: 1217,30 mW
+#
+# ================================================

@@ -1,0 +1,950 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-14T20:18:40.642414",
+    "normalization_formula": "Normalized_Energy = (Measured_Energy / Test_Duration) × 60",
+    "baseline_duration_sec": 60,
+    "architectures": [
+      "classicmvvm",
+      "hybrid",
+      "mvc",
+      "mvi",
+      "mvp",
+      "singlestatemvvm"
+    ],
+    "scenarios": [
+      "Chat_Streaming",
+      "Shopping_Cart",
+      "Product_Browsing"
+    ]
+  },
+  "normalized_data": {
+    "classicmvvm": {
+      "Chat_Streaming": {
+        "iterations": [
+          42.381,
+          21.269,
+          21.1907,
+          42.3575,
+          21.2064
+        ],
+        "mean": 29.6809,
+        "median": 21.269,
+        "std": 11.5829,
+        "cv_percent": 39.0246,
+        "min": 21.1907,
+        "max": 42.381
+      },
+      "Shopping_Cart": {
+        "iterations": [
+          21.04,
+          28.0773,
+          28.3985,
+          28.419,
+          28.1886
+        ],
+        "mean": 26.8247,
+        "median": 28.1886,
+        "std": 3.2369,
+        "cv_percent": 12.067,
+        "min": 21.04,
+        "max": 28.419
+      },
+      "Product_Browsing": {
+        "iterations": [
+          13.744,
+          27.3744,
+          20.0078,
+          26.993,
+          27.367
+        ],
+        "mean": 23.0972,
+        "median": 26.993,
+        "std": 6.0977,
+        "cv_percent": 26.4003,
+        "min": 13.744,
+        "max": 27.3744
+      }
+    },
+    "hybrid": {
+      "Chat_Streaming": {
+        "iterations": [
+          20.5601,
+          20.8443,
+          20.8169,
+          20.4607,
+          20.5114
+        ],
+        "mean": 20.6387,
+        "median": 20.5601,
+        "std": 0.1789,
+        "cv_percent": 0.867,
+        "min": 20.4607,
+        "max": 20.8443
+      },
+      "Shopping_Cart": {
+        "iterations": [
+          41.4471,
+          20.595,
+          20.6028,
+          20.2504,
+          39.7322
+        ],
+        "mean": 28.5255,
+        "median": 20.6028,
+        "std": 11.0306,
+        "cv_percent": 38.6693,
+        "min": 20.2504,
+        "max": 41.4471
+      },
+      "Product_Browsing": {
+        "iterations": [
+          19.3723,
+          19.3783,
+          19.4262,
+          19.3655,
+          19.4409
+        ],
+        "mean": 19.3966,
+        "median": 19.3783,
+        "std": 0.0344,
+        "cv_percent": 0.1773,
+        "min": 19.3655,
+        "max": 19.4409
+      }
+    },
+    "mvc": {
+      "Chat_Streaming": {
+        "iterations": [
+          20.9505,
+          21.0802,
+          21.0851,
+          21.0557,
+          21.0935
+        ],
+        "mean": 21.053,
+        "median": 21.0802,
+        "std": 0.059,
+        "cv_percent": 0.2803,
+        "min": 20.9505,
+        "max": 21.0935
+      },
+      "Shopping_Cart": {
+        "iterations": [
+          21.0678,
+          20.9721,
+          20.9544,
+          20.9538,
+          20.8804
+        ],
+        "mean": 20.9657,
+        "median": 20.9544,
+        "std": 0.0671,
+        "cv_percent": 0.32,
+        "min": 20.8804,
+        "max": 21.0678
+      },
+      "Product_Browsing": {
+        "iterations": [
+          39.9078,
+          19.9562,
+          39.8066,
+          19.9466,
+          39.9308
+        ],
+        "mean": 31.9096,
+        "median": 39.8066,
+        "std": 10.9164,
+        "cv_percent": 34.2104,
+        "min": 19.9466,
+        "max": 39.9308
+      }
+    },
+    "mvi": {
+      "Chat_Streaming": {
+        "iterations": [
+          20.1741,
+          40.3613,
+          40.2243,
+          20.1547,
+          40.3686
+        ],
+        "mean": 32.2566,
+        "median": 40.2243,
+        "std": 11.0388,
+        "cv_percent": 34.2217,
+        "min": 20.1547,
+        "max": 40.3686
+      },
+      "Shopping_Cart": {
+        "iterations": [
+          19.6802,
+          40.3542,
+          26.4437,
+          20.0932,
+          19.6358
+        ],
+        "mean": 25.2414,
+        "median": 20.0932,
+        "std": 8.926,
+        "cv_percent": 35.3626,
+        "min": 19.6358,
+        "max": 40.3542
+      },
+      "Product_Browsing": {
+        "iterations": [
+          19.0106,
+          19.1268,
+          19.1187,
+          19.0777,
+          19.033
+        ],
+        "mean": 19.0734,
+        "median": 19.0777,
+        "std": 0.0512,
+        "cv_percent": 0.2687,
+        "min": 19.0106,
+        "max": 19.1268
+      }
+    },
+    "mvp": {
+      "Chat_Streaming": {
+        "iterations": [
+          20.6177,
+          20.6714,
+          41.1359,
+          20.5813,
+          41.1761
+        ],
+        "mean": 28.8365,
+        "median": 20.6714,
+        "std": 11.2462,
+        "cv_percent": 38.9998,
+        "min": 20.5813,
+        "max": 41.1761
+      },
+      "Shopping_Cart": {
+        "iterations": [
+          41.4401,
+          20.6019,
+          20.1266,
+          20.5083,
+          20.4756
+        ],
+        "mean": 24.6305,
+        "median": 20.5083,
+        "std": 9.3986,
+        "cv_percent": 38.1582,
+        "min": 20.1266,
+        "max": 41.4401
+      },
+      "Product_Browsing": {
+        "iterations": [
+          19.5026,
+          38.9977,
+          19.5263,
+          38.6409,
+          19.3476
+        ],
+        "mean": 27.203,
+        "median": 19.5263,
+        "std": 10.6051,
+        "cv_percent": 38.9852,
+        "min": 19.3476,
+        "max": 38.9977
+      }
+    },
+    "singlestatemvvm": {
+      "Chat_Streaming": {
+        "iterations": [
+          27.9414,
+          27.9842,
+          28.0,
+          27.9759,
+          34.6326
+        ],
+        "mean": 29.3068,
+        "median": 27.9842,
+        "std": 2.9773,
+        "cv_percent": 10.159,
+        "min": 27.9414,
+        "max": 34.6326
+      },
+      "Shopping_Cart": {
+        "iterations": [
+          27.5918,
+          27.8463,
+          27.5556,
+          27.2388,
+          27.6654
+        ],
+        "mean": 27.5796,
+        "median": 27.5918,
+        "std": 0.221,
+        "cv_percent": 0.8013,
+        "min": 27.2388,
+        "max": 27.8463
+      },
+      "Product_Browsing": {
+        "iterations": [
+          26.6716,
+          26.7372,
+          26.7998,
+          26.666,
+          26.7763
+        ],
+        "mean": 26.7302,
+        "median": 26.7372,
+        "std": 0.0604,
+        "cv_percent": 0.2258,
+        "min": 26.666,
+        "max": 26.7998
+      }
+    }
+  },
+  "summary": {
+    "by_scenario": {
+      "Chat_Streaming": {
+        "rankings": [
+          {
+            "rank": 1,
+            "architecture": "hybrid",
+            "median": 20.5601
+          },
+          {
+            "rank": 2,
+            "architecture": "mvp",
+            "median": 20.6714
+          },
+          {
+            "rank": 3,
+            "architecture": "mvc",
+            "median": 21.0802
+          },
+          {
+            "rank": 4,
+            "architecture": "classicmvvm",
+            "median": 21.269
+          },
+          {
+            "rank": 5,
+            "architecture": "singlestatemvvm",
+            "median": 27.9842
+          },
+          {
+            "rank": 6,
+            "architecture": "mvi",
+            "median": 40.2243
+          }
+        ],
+        "range_percent": 95.6425
+      },
+      "Shopping_Cart": {
+        "rankings": [
+          {
+            "rank": 1,
+            "architecture": "mvi",
+            "median": 20.0932
+          },
+          {
+            "rank": 2,
+            "architecture": "mvp",
+            "median": 20.5083
+          },
+          {
+            "rank": 3,
+            "architecture": "hybrid",
+            "median": 20.6028
+          },
+          {
+            "rank": 4,
+            "architecture": "mvc",
+            "median": 20.9544
+          },
+          {
+            "rank": 5,
+            "architecture": "singlestatemvvm",
+            "median": 27.5918
+          },
+          {
+            "rank": 6,
+            "architecture": "classicmvvm",
+            "median": 28.1886
+          }
+        ],
+        "range_percent": 40.2893
+      },
+      "Product_Browsing": {
+        "rankings": [
+          {
+            "rank": 1,
+            "architecture": "mvi",
+            "median": 19.0777
+          },
+          {
+            "rank": 2,
+            "architecture": "hybrid",
+            "median": 19.3783
+          },
+          {
+            "rank": 3,
+            "architecture": "mvp",
+            "median": 19.5263
+          },
+          {
+            "rank": 4,
+            "architecture": "singlestatemvvm",
+            "median": 26.7372
+          },
+          {
+            "rank": 5,
+            "architecture": "classicmvvm",
+            "median": 26.993
+          },
+          {
+            "rank": 6,
+            "architecture": "mvc",
+            "median": 39.8066
+          }
+        ],
+        "range_percent": 108.6551
+      }
+    },
+    "overall": {
+      "rankings": [
+        {
+          "rank": 1,
+          "architecture": "hybrid",
+          "total_median": 60.5412
+        },
+        {
+          "rank": 2,
+          "architecture": "mvp",
+          "total_median": 60.706
+        },
+        {
+          "rank": 3,
+          "architecture": "classicmvvm",
+          "total_median": 76.4506
+        },
+        {
+          "rank": 4,
+          "architecture": "mvi",
+          "total_median": 79.3952
+        },
+        {
+          "rank": 5,
+          "architecture": "mvc",
+          "total_median": 81.8412
+        },
+        {
+          "rank": 6,
+          "architecture": "singlestatemvvm",
+          "total_median": 82.3132
+        }
+      ],
+      "range_percent": 35.9623
+    }
+  },
+  "statistical_tests": {
+    "Chat_Streaming": {
+      "friedman": {
+        "statistic": 8.5429,
+        "p_value": 0.1287,
+        "significant": false
+      },
+      "nemenyi": {
+        "performed": false,
+        "pairwise_p_values": {},
+        "significant_pairs": []
+      },
+      "cliffs_delta": {
+        "classicmvvm_vs_hybrid": {
+          "delta": 1.0,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "classicmvvm_vs_mvc": {
+          "delta": 1.0,
+          "interpretation": "large",
+          "direction": "mvc more efficient"
+        },
+        "classicmvvm_vs_mvi": {
+          "delta": 0.28,
+          "interpretation": "small",
+          "direction": "mvi more efficient"
+        },
+        "classicmvvm_vs_mvp": {
+          "delta": 0.52,
+          "interpretation": "large",
+          "direction": "mvp more efficient"
+        },
+        "classicmvvm_vs_singlestatemvvm": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "classicmvvm more efficient"
+        },
+        "hybrid_vs_mvc": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_mvi": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_mvp": {
+          "delta": -0.52,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_singlestatemvvm": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "mvc_vs_mvi": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "mvc more efficient"
+        },
+        "mvc_vs_mvp": {
+          "delta": 0.2,
+          "interpretation": "small",
+          "direction": "mvp more efficient"
+        },
+        "mvc_vs_singlestatemvvm": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "mvc more efficient"
+        },
+        "mvi_vs_mvp": {
+          "delta": -0.28,
+          "interpretation": "small",
+          "direction": "mvi more efficient"
+        },
+        "mvi_vs_singlestatemvvm": {
+          "delta": 0.2,
+          "interpretation": "small",
+          "direction": "singlestatemvvm more efficient"
+        },
+        "mvp_vs_singlestatemvvm": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "mvp more efficient"
+        }
+      }
+    },
+    "Shopping_Cart": {
+      "friedman": {
+        "statistic": 6.0286,
+        "p_value": 0.3034,
+        "significant": false
+      },
+      "nemenyi": {
+        "performed": false,
+        "pairwise_p_values": {},
+        "significant_pairs": []
+      },
+      "cliffs_delta": {
+        "classicmvvm_vs_hybrid": {
+          "delta": 0.2,
+          "interpretation": "small",
+          "direction": "hybrid more efficient"
+        },
+        "classicmvvm_vs_mvc": {
+          "delta": 0.92,
+          "interpretation": "large",
+          "direction": "mvc more efficient"
+        },
+        "classicmvvm_vs_mvi": {
+          "delta": 0.52,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "classicmvvm_vs_mvp": {
+          "delta": 0.6,
+          "interpretation": "large",
+          "direction": "mvp more efficient"
+        },
+        "classicmvvm_vs_singlestatemvvm": {
+          "delta": 0.6,
+          "interpretation": "large",
+          "direction": "singlestatemvvm more efficient"
+        },
+        "hybrid_vs_mvc": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_mvi": {
+          "delta": 0.44,
+          "interpretation": "medium",
+          "direction": "mvi more efficient"
+        },
+        "hybrid_vs_mvp": {
+          "delta": 0.36,
+          "interpretation": "medium",
+          "direction": "mvp more efficient"
+        },
+        "hybrid_vs_singlestatemvvm": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "hybrid more efficient"
+        },
+        "mvc_vs_mvi": {
+          "delta": 0.2,
+          "interpretation": "small",
+          "direction": "mvi more efficient"
+        },
+        "mvc_vs_mvp": {
+          "delta": 0.6,
+          "interpretation": "large",
+          "direction": "mvp more efficient"
+        },
+        "mvc_vs_singlestatemvvm": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "mvc more efficient"
+        },
+        "mvi_vs_mvp": {
+          "delta": -0.36,
+          "interpretation": "medium",
+          "direction": "mvi more efficient"
+        },
+        "mvi_vs_singlestatemvvm": {
+          "delta": -0.6,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "mvp_vs_singlestatemvvm": {
+          "delta": -0.6,
+          "interpretation": "large",
+          "direction": "mvp more efficient"
+        }
+      }
+    },
+    "Product_Browsing": {
+      "friedman": {
+        "statistic": 13.9143,
+        "p_value": 0.0162,
+        "significant": true
+      },
+      "nemenyi": {
+        "performed": true,
+        "pairwise_p_values": {
+          "classicmvvm_vs_hybrid": 0.7556,
+          "classicmvvm_vs_mvc": 0.9846,
+          "classicmvvm_vs_mvi": 0.1681,
+          "classicmvvm_vs_mvp": 1.0,
+          "classicmvvm_vs_singlestatemvvm": 0.9994,
+          "hybrid_vs_mvc": 0.326,
+          "hybrid_vs_mvi": 0.9134,
+          "hybrid_vs_mvp": 0.6505,
+          "hybrid_vs_singlestatemvvm": 0.5382,
+          "mvc_vs_mvi": 0.0284,
+          "mvc_vs_mvp": 0.9959,
+          "mvc_vs_singlestatemvvm": 0.9994,
+          "mvi_vs_mvp": 0.1139,
+          "mvi_vs_singlestatemvvm": 0.0743,
+          "mvp_vs_singlestatemvvm": 1.0
+        },
+        "significant_pairs": [
+          "mvc_vs_mvi"
+        ]
+      },
+      "cliffs_delta": {
+        "classicmvvm_vs_hybrid": {
+          "delta": 0.6,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "classicmvvm_vs_mvc": {
+          "delta": -0.36,
+          "interpretation": "medium",
+          "direction": "classicmvvm more efficient"
+        },
+        "classicmvvm_vs_mvi": {
+          "delta": 0.6,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "classicmvvm_vs_mvp": {
+          "delta": -0.04,
+          "interpretation": "negligible",
+          "direction": "equivalent"
+        },
+        "classicmvvm_vs_singlestatemvvm": {
+          "delta": 0.2,
+          "interpretation": "small",
+          "direction": "singlestatemvvm more efficient"
+        },
+        "hybrid_vs_mvc": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_mvi": {
+          "delta": 1.0,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "hybrid_vs_mvp": {
+          "delta": -0.6,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_singlestatemvvm": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "mvc_vs_mvi": {
+          "delta": 1.0,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "mvc_vs_mvp": {
+          "delta": 0.68,
+          "interpretation": "large",
+          "direction": "mvp more efficient"
+        },
+        "mvc_vs_singlestatemvvm": {
+          "delta": 0.2,
+          "interpretation": "small",
+          "direction": "singlestatemvvm more efficient"
+        },
+        "mvi_vs_mvp": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "mvi_vs_singlestatemvvm": {
+          "delta": -1.0,
+          "interpretation": "large",
+          "direction": "mvi more efficient"
+        },
+        "mvp_vs_singlestatemvvm": {
+          "delta": -0.2,
+          "interpretation": "small",
+          "direction": "mvp more efficient"
+        }
+      }
+    },
+    "overall": {
+      "friedman": {
+        "statistic": 16.7524,
+        "p_value": 0.005,
+        "significant": true
+      },
+      "nemenyi": {
+        "performed": true,
+        "pairwise_p_values": {
+          "classicmvvm_vs_hybrid": 0.0528,
+          "classicmvvm_vs_mvc": 0.892,
+          "classicmvvm_vs_mvi": 0.0528,
+          "classicmvvm_vs_mvp": 0.8022,
+          "classicmvvm_vs_singlestatemvvm": 1.0,
+          "hybrid_vs_mvc": 0.4941,
+          "hybrid_vs_mvi": 1.0,
+          "hybrid_vs_mvp": 0.6241,
+          "hybrid_vs_singlestatemvvm": 0.04,
+          "mvc_vs_mvi": 0.4941,
+          "mvc_vs_mvp": 1.0,
+          "mvc_vs_singlestatemvvm": 0.8507,
+          "mvi_vs_mvp": 0.6241,
+          "mvi_vs_singlestatemvvm": 0.04,
+          "mvp_vs_singlestatemvvm": 0.7473
+        },
+        "significant_pairs": [
+          "hybrid_vs_singlestatemvvm",
+          "mvi_vs_singlestatemvvm"
+        ]
+      },
+      "cliffs_delta": {
+        "classicmvvm_vs_hybrid": {
+          "delta": 0.5822,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "classicmvvm_vs_mvc": {
+          "delta": 0.4133,
+          "interpretation": "medium",
+          "direction": "mvc more efficient"
+        },
+        "classicmvvm_vs_mvi": {
+          "delta": 0.3689,
+          "interpretation": "medium",
+          "direction": "mvi more efficient"
+        },
+        "classicmvvm_vs_mvp": {
+          "delta": 0.2711,
+          "interpretation": "small",
+          "direction": "mvp more efficient"
+        },
+        "classicmvvm_vs_singlestatemvvm": {
+          "delta": -0.0844,
+          "interpretation": "negligible",
+          "direction": "equivalent"
+        },
+        "hybrid_vs_mvc": {
+          "delta": -0.6178,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_mvi": {
+          "delta": 0.1644,
+          "interpretation": "small",
+          "direction": "mvi more efficient"
+        },
+        "hybrid_vs_mvp": {
+          "delta": -0.2267,
+          "interpretation": "small",
+          "direction": "hybrid more efficient"
+        },
+        "hybrid_vs_singlestatemvvm": {
+          "delta": -0.7333,
+          "interpretation": "large",
+          "direction": "hybrid more efficient"
+        },
+        "mvc_vs_mvi": {
+          "delta": 0.3067,
+          "interpretation": "small",
+          "direction": "mvi more efficient"
+        },
+        "mvc_vs_mvp": {
+          "delta": 0.2622,
+          "interpretation": "small",
+          "direction": "mvp more efficient"
+        },
+        "mvc_vs_singlestatemvvm": {
+          "delta": -0.6,
+          "interpretation": "large",
+          "direction": "mvc more efficient"
+        },
+        "mvi_vs_mvp": {
+          "delta": -0.3333,
+          "interpretation": "medium",
+          "direction": "mvi more efficient"
+        },
+        "mvi_vs_singlestatemvvm": {
+          "delta": -0.4667,
+          "interpretation": "medium",
+          "direction": "mvi more efficient"
+        },
+        "mvp_vs_singlestatemvvm": {
+          "delta": -0.3333,
+          "interpretation": "medium",
+          "direction": "mvp more efficient"
+        }
+      }
+    }
+  },
+  "spike_analysis": {
+    "threshold_mWh": 35,
+    "by_architecture_scenario": {
+      "classicmvvm": {
+        "Chat_Streaming": {
+          "spike_count": 2,
+          "total_valid": 5,
+          "spike_frequency_percent": 40.0
+        },
+        "Shopping_Cart": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        },
+        "Product_Browsing": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        }
+      },
+      "hybrid": {
+        "Chat_Streaming": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        },
+        "Shopping_Cart": {
+          "spike_count": 2,
+          "total_valid": 5,
+          "spike_frequency_percent": 40.0
+        },
+        "Product_Browsing": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        }
+      },
+      "mvc": {
+        "Chat_Streaming": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        },
+        "Shopping_Cart": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        },
+        "Product_Browsing": {
+          "spike_count": 3,
+          "total_valid": 5,
+          "spike_frequency_percent": 60.0
+        }
+      },
+      "mvi": {
+        "Chat_Streaming": {
+          "spike_count": 3,
+          "total_valid": 5,
+          "spike_frequency_percent": 60.0
+        },
+        "Shopping_Cart": {
+          "spike_count": 1,
+          "total_valid": 5,
+          "spike_frequency_percent": 20.0
+        },
+        "Product_Browsing": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        }
+      },
+      "mvp": {
+        "Chat_Streaming": {
+          "spike_count": 2,
+          "total_valid": 5,
+          "spike_frequency_percent": 40.0
+        },
+        "Shopping_Cart": {
+          "spike_count": 1,
+          "total_valid": 5,
+          "spike_frequency_percent": 20.0
+        },
+        "Product_Browsing": {
+          "spike_count": 2,
+          "total_valid": 5,
+          "spike_frequency_percent": 40.0
+        }
+      },
+      "singlestatemvvm": {
+        "Chat_Streaming": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        },
+        "Shopping_Cart": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        },
+        "Product_Browsing": {
+          "spike_count": 0,
+          "total_valid": 5,
+          "spike_frequency_percent": 0.0
+        }
+      }
+    }
+  }
+}

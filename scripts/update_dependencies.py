@@ -6,15 +6,25 @@ Only updates feature implementation dependencies, keeps API dependencies active
 
 import sys
 import re
+import argparse
 
-def update_dependencies(gradle_file, architecture):
+def update_dependencies(gradle_file, architecture, hybrid=False):
     """Update dependencies for given architecture"""
     
     with open(gradle_file, 'r') as f:
         lines = f.readlines()
     
     # Get module names
-    if architecture == "singlestatemvvm":
+    if hybrid or architecture == "hybrid":
+        # Hybrid architecture uses specific implementations
+        # Product: Classic MVVM (stress test excellence)
+        # Cart: MVP (cart updates champion)
+        # Chat: Single-State MVVM (balanced performance + best code quality)
+        # Note: Single-State MVVM uses base module name without suffix
+        product_module = "productImplClassicmvvm"
+        cart_module = "cartImplMvp"
+        chat_module = "chatImpl"  # Single-State MVVM is the default/base implementation
+    elif architecture == "singlestatemvvm":
         product_module = "productImpl"
         cart_module = "cartImpl"
         chat_module = "chatImpl"
@@ -40,9 +50,15 @@ def update_dependencies(gradle_file, architecture):
         print(f"Error: Could not find feature section in {gradle_file}")
         return False
     
+    # Build regex patterns for the three modules we need
+    product_pattern = rf'projects\.feature\.{re.escape(product_module)}\b'
+    cart_pattern = rf'projects\.feature\.{re.escape(cart_module)}\b'
+    chat_pattern = rf'projects\.feature\.{re.escape(chat_module)}\b'
+    
     # Process lines in feature section
     for i in range(feature_start, feature_end):
         line = lines[i]
+        original_line = line
         
         # Ensure API dependencies are uncommented
         if 'productApi' in line or 'cartApi' in line or 'chatApi' in line:
@@ -51,57 +67,66 @@ def update_dependencies(gradle_file, architecture):
                 lines[i] = '    ' + lines[i].lstrip()
             continue
         
-        # Comment out ALL implementation lines first
+        # Check if this is an implementation line for product/cart/chat
         if 'Impl' in line and ('product' in line or 'cart' in line or 'chat' in line):
-            # Remove any existing comments first
-            original_line = re.sub(r'^\s*//+\s*', '    ', line)
-            # Comment it out
-            if original_line.strip().startswith('implementation'):
-                lines[i] = re.sub(r'^(\s*)implementation', r'\1//implementation', original_line)
+            # Check if this is one of the modules we need to keep uncommented
+            is_target_module = (
+                re.search(product_pattern, line) or
+                re.search(cart_pattern, line) or
+                re.search(chat_pattern, line)
+            )
+            
+            if is_target_module:
+                # Uncomment this line (remove any leading //)
+                lines[i] = re.sub(r'^\s*//+\s*', '    ', line)
+                if not lines[i].startswith('    implementation'):
+                    lines[i] = '    ' + lines[i].lstrip()
             else:
-                lines[i] = original_line
-        
-        # Uncomment ONLY the three needed modules (exact match)
-        # Use regex to match exact module name
-        if re.search(rf'projects\.feature\.{re.escape(product_module)}\b', line):
-            lines[i] = re.sub(r'^\s*//+\s*', '    ', lines[i])
-            if not lines[i].startswith('    implementation'):
-                lines[i] = '    ' + lines[i].lstrip()
-        elif re.search(rf'projects\.feature\.{re.escape(cart_module)}\b', line):
-            lines[i] = re.sub(r'^\s*//+\s*', '    ', lines[i])
-            if not lines[i].startswith('    implementation'):
-                lines[i] = '    ' + lines[i].lstrip()
-        elif re.search(rf'projects\.feature\.{re.escape(chat_module)}\b', line):
-            lines[i] = re.sub(r'^\s*//+\s*', '    ', lines[i])
-            if not lines[i].startswith('    implementation'):
-                lines[i] = '    ' + lines[i].lstrip()
+                # Comment out this line (add // before implementation)
+                # First, remove any existing comments to get clean line
+                uncommented = re.sub(r'^\s*//+\s*', '    ', line)
+                if uncommented.strip().startswith('implementation'):
+                    # Add // before implementation, preserving indentation
+                    lines[i] = re.sub(r'^(\s*)implementation', r'\1//implementation', uncommented)
+                else:
+                    lines[i] = uncommented
     
     # Write back
     with open(gradle_file, 'w') as f:
         f.writelines(lines)
     
-    # Verify
+    # Verify - check for exact module paths
     content = ''.join(lines)
-    product_count = content.count(f'implementation(projects.feature.{product_module})')
-    cart_count = content.count(f'implementation(projects.feature.{cart_module})')
-    chat_count = content.count(f'implementation(projects.feature.{chat_module})')
     
-    if product_count == 1 and cart_count == 1 and chat_count == 1:
-        print(f"✓ Updated dependencies for {architecture}")
+    # Use exact regex patterns to match full module paths
+    # Format: implementation(projects.feature.productImplMvp)
+    product_pattern = rf'implementation\(projects\.feature\.{re.escape(product_module)}\)'
+    cart_pattern = rf'implementation\(projects\.feature\.{re.escape(cart_module)}\)'
+    chat_pattern = rf'implementation\(projects\.feature\.{re.escape(chat_module)}\)'
+    
+    # Check for uncommented versions (without the // prefix)
+    product_uncommented = len([line for line in lines if re.search(product_pattern, line) and not line.strip().startswith('//')])
+    cart_uncommented = len([line for line in lines if re.search(cart_pattern, line) and not line.strip().startswith('//')])
+    chat_uncommented = len([line for line in lines if re.search(chat_pattern, line) and not line.strip().startswith('//')])
+    
+    if product_uncommented == 1 and cart_uncommented == 1 and chat_uncommented == 1:
+        arch_name = "hybrid" if (hybrid or architecture == "hybrid") else architecture
+        print(f"✓ Updated dependencies for {arch_name}")
+        print(f"  Product: {product_module}, Cart: {cart_module}, Chat: {chat_module}")
         return True
     else:
         print(f"✗ Failed to update dependencies correctly")
-        print(f"  Product: {product_count}, Cart: {cart_count}, Chat: {chat_count}")
+        print(f"  Product: {product_uncommented} (expected 1), Cart: {cart_uncommented} (expected 1), Chat: {chat_uncommented} (expected 1)")
         return False
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print("Usage: update_dependencies.py <gradle_file> <architecture>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description='Update Gradle dependencies for architecture')
+    parser.add_argument('gradle_file', help='Path to build.gradle.kts file')
+    parser.add_argument('architecture', help='Architecture name (e.g., classicmvvm, mvp, hybrid)')
+    parser.add_argument('--hybrid', action='store_true', help='Enable hybrid architecture mode')
     
-    gradle_file = sys.argv[1]
-    architecture = sys.argv[2]
+    args = parser.parse_args()
     
-    success = update_dependencies(gradle_file, architecture)
+    success = update_dependencies(args.gradle_file, args.architecture, args.hybrid)
     sys.exit(0 if success else 1)
 

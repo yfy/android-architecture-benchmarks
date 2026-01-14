@@ -3,8 +3,8 @@
 ################################################################################
 # Android Benchmark Automation Script
 # 
-# Automates benchmark testing across 5 Android architecture patterns:
-# - Classic MVVM, Single-State MVVM, MVC, MVP, MVI
+# Automates benchmark testing across 6 Android architecture patterns:
+# - Classic MVVM, Single-State MVVM, MVC, MVP, MVI, Hybrid
 #
 # Supports two benchmark modes:
 # - Energy Mode: Runs EnergyBenchmark (requires WiFi ADB, device unplugged)
@@ -23,11 +23,12 @@ set -euo pipefail
 
 # Configuration Variables
 DEVICE_IP="${DEVICE_IP:-192.168.1.100:5555}"
-ARCHITECTURES=("classicmvvm" "singlestatemvvm" "mvc" "mvp" "mvi")
+ARCHITECTURES=("classicmvvm" "singlestatemvvm" "mvc" "mvp" "mvi" "hybrid")
 MAX_RETRIES=3
 ADB_CHECK_INTERVAL=30
-SCENARIO_COOLDOWN=120
-ARCHITECTURE_COOLDOWN=300
+STARTUP_COOLDOWN=0          # Startup tests: process restart handles cleanup
+SCENARIO_COOLDOWN=120       # Cooldown for stateful tests (cart, chat, streaming)
+ARCHITECTURE_COOLDOWN=300   # Cooldown between architectures
 
 # Paths
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -57,6 +58,32 @@ NC='\033[0m' # No Color
 ################################################################################
 # Utility Functions
 ################################################################################
+
+needs_cooldown() {
+    local scenario=$1
+    local benchmark_class=$2
+    
+    if [[ "$benchmark_class" == *"Startup"* ]] || [[ "$benchmark_class" == *"startup"* ]] || [[ "$benchmark_class" == *"StartupBenchmark"* ]]; then
+        return 1
+    fi
+    
+    if [[ "$scenario" == *"Cart"* ]] || [[ "$scenario" == *"Chat"* ]] || [[ "$scenario" == *"Streaming"* ]]; then
+        return 0
+    fi
+    
+    return 0
+}
+
+get_cooldown_duration() {
+    local benchmark_class=$1
+    
+    if [[ "$benchmark_class" == *"Startup"* ]] || [[ "$benchmark_class" == *"startup"* ]] || [[ "$benchmark_class" == *"StartupBenchmark"* ]]; then
+        echo "$STARTUP_COOLDOWN"
+        return
+    fi
+    
+    echo "$SCENARIO_COOLDOWN"
+}
 
 log_info() {
     local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
@@ -516,20 +543,39 @@ update_dependencies() {
         return 1
     fi
     
-    if ! python3 "$update_script" "$APP_GRADLE" "$architecture" >> "$LOG_FILE" 2>&1; then
+    # Build Python command with optional --hybrid flag
+    local python_cmd="python3 \"$update_script\" \"$APP_GRADLE\" \"$architecture\""
+    if [[ "$architecture" == "hybrid" ]]; then
+        python_cmd="$python_cmd --hybrid"
+    fi
+    
+    if ! eval "$python_cmd" >> "$LOG_FILE" 2>&1; then
         log_error "Failed to update dependencies using Python script"
         mv "${APP_GRADLE}.bak" "$APP_GRADLE"
         return 1
     fi
     
-    # Verify changes
-    local product_module=$(get_module_name "product" "$architecture")
-    local cart_module=$(get_module_name "cart" "$architecture")
-    local chat_module=$(get_module_name "chat" "$architecture")
+    # Verify changes - handle hybrid architecture specially
+            if [[ "$architecture" == "hybrid" ]]; then
+        # Hybrid uses specific modules
+        # Product: Classic MVVM (stress test excellence)
+        # Cart: MVP (cart updates champion)
+        # Chat: Single-State MVVM (balanced performance + best code quality)
+        # Note: Single-State MVVM uses base module name without suffix
+        local product_module="productImplClassicmvvm"
+        local cart_module="cartImplMvp"
+        local chat_module="chatImpl"
+    else
+        local product_module=$(get_module_name "product" "$architecture")
+        local cart_module=$(get_module_name "cart" "$architecture")
+        local chat_module=$(get_module_name "chat" "$architecture")
+    fi
     
-    local product_count=$(grep -c "implementation(projects.feature.${product_module})" "$APP_GRADLE" 2>/dev/null || echo "0")
-    local cart_count=$(grep -c "implementation(projects.feature.${cart_module})" "$APP_GRADLE" 2>/dev/null || echo "0")
-    local chat_count=$(grep -c "implementation(projects.feature.${chat_module})" "$APP_GRADLE" 2>/dev/null || echo "0")
+    # Count uncommented lines only (exact module path matching)
+    # Format: implementation(projects.feature.productImplMvp)
+    product_count=$(grep "implementation(projects.feature.${product_module})" "$APP_GRADLE" 2>/dev/null | grep -v "^[[:space:]]*//" | wc -l | tr -d ' ' || echo "0")
+    cart_count=$(grep "implementation(projects.feature.${cart_module})" "$APP_GRADLE" 2>/dev/null | grep -v "^[[:space:]]*//" | wc -l | tr -d ' ' || echo "0")
+    chat_count=$(grep "implementation(projects.feature.${chat_module})" "$APP_GRADLE" 2>/dev/null | grep -v "^[[:space:]]*//" | wc -l | tr -d ' ' || echo "0")
     
     # Ensure counts are numeric
     product_count=${product_count:-0}
@@ -538,10 +584,13 @@ update_dependencies() {
     
     if [ "$product_count" = "1" ] && [ "$cart_count" = "1" ] && [ "$chat_count" = "1" ]; then
         # Also verify API dependencies are present
-        local api_count=$(grep -c "implementation(projects.feature.productApi)" "$APP_GRADLE" 2>/dev/null || echo "0")
+        local api_count=$(grep "implementation(projects.feature.productApi)" "$APP_GRADLE" 2>/dev/null | grep -v "^[[:space:]]*//" | wc -l | tr -d ' ' || echo "0")
         if [ "$api_count" = "1" ]; then
             rm -f "${APP_GRADLE}.bak"
             log_success "Updated dependencies for $architecture"
+            if [[ "$architecture" == "hybrid" ]]; then
+                log_info "Hybrid modules: Product=ClassicMVVM, Cart=MVP, Chat=SingleStateMVVM"
+            fi
             return 0
         else
             log_error "API dependencies missing after update"
@@ -617,8 +666,13 @@ run_benchmark_with_retry() {
                         increment_failed_attempts "$arch"
                         attempts=$((attempts + 1))
                         if [ $attempts -lt $MAX_RETRIES ]; then
-                            log_info "Waiting ${SCENARIO_COOLDOWN} seconds before retry..."
-                            sleep $SCENARIO_COOLDOWN
+                            local cooldown_duration=$(get_cooldown_duration "$benchmark_class")
+                            if [ "$cooldown_duration" -gt 0 ]; then
+                                log_info "Waiting ${cooldown_duration} seconds before retry..."
+                                sleep $cooldown_duration
+                            else
+                                log_info "Skipping cooldown for startup test..."
+                            fi
                         fi
                         continue
                     fi
@@ -628,8 +682,11 @@ run_benchmark_with_retry() {
                 increment_failed_attempts "$arch"
                 attempts=$((attempts + 1))
                 if [ $attempts -lt $MAX_RETRIES ]; then
-                    log_info "Waiting ${SCENARIO_COOLDOWN} seconds before retry..."
-                    sleep $SCENARIO_COOLDOWN
+                    local cooldown_duration=$(get_cooldown_duration "$benchmark_class")
+                    if [ "$cooldown_duration" -gt 0 ]; then
+                        log_info "Waiting ${cooldown_duration} seconds before retry..."
+                        sleep $cooldown_duration
+                    fi
                 fi
                 continue
             fi
@@ -639,8 +696,11 @@ run_benchmark_with_retry() {
                 increment_failed_attempts "$arch"
                 attempts=$((attempts + 1))
                 if [ $attempts -lt $MAX_RETRIES ]; then
-                    log_info "Waiting ${SCENARIO_COOLDOWN} seconds before retry..."
-                    sleep $SCENARIO_COOLDOWN
+                    local cooldown_duration=$(get_cooldown_duration "$benchmark_class")
+                    if [ "$cooldown_duration" -gt 0 ]; then
+                        log_info "Waiting ${cooldown_duration} seconds before retry..."
+                        sleep $cooldown_duration
+                    fi
                 fi
                 continue
             fi
@@ -718,7 +778,6 @@ run_benchmark_with_retry() {
         local exit_code=$(cat "${benchmark_output}.exit" 2>/dev/null || echo "1")
         rm -f "${benchmark_output}.exit"
         
-        # Always append output to log
         cat "$benchmark_output" >> "$LOG_FILE"
         
         if [ "$exit_code" = "0" ]; then
@@ -759,8 +818,11 @@ run_benchmark_with_retry() {
             attempts=$((attempts + 1))
             
             if [ $attempts -lt $MAX_RETRIES ]; then
-                log_info "Waiting ${SCENARIO_COOLDOWN} seconds before retry..."
-                sleep $SCENARIO_COOLDOWN
+                local cooldown_duration=$(get_cooldown_duration "$benchmark_class")
+                if [ "$cooldown_duration" -gt 0 ]; then
+                    log_info "Waiting ${cooldown_duration} seconds before retry..."
+                    sleep $cooldown_duration
+                fi
             fi
         fi
     done
@@ -1080,9 +1142,9 @@ parse_arguments() {
                 echo "  -h, --help             Show this help message"
                 echo ""
                 echo "Benchmark Modes:"
-                echo "  --energy (default: --general)  Runs only EnergyBenchmark tests"
+                echo "  --energy (default: --general)   Runs only EnergyBenchmark tests"
                 echo "                                  Requires WiFi ADB connection (device must be unplugged)"
-                echo "  --general                      Runs BenchmarkTestSuite (all benchmarks)"
+                echo "  --general                        Runs BenchmarkTestSuite (all benchmarks)"
                 echo "                                  Works with USB or WiFi ADB connection"
                 echo ""
                 echo "Environment Variables:"
@@ -1128,6 +1190,7 @@ main() {
     fi
     echo "   Architectures: ${#ARCHITECTURES[@]}"
     echo "   Max Retries: $MAX_RETRIES"
+    echo "   Startup Cooldown: ${STARTUP_COOLDOWN}s"
     echo "   Scenario Cooldown: ${SCENARIO_COOLDOWN}s"
     echo "   Architecture Cooldown: ${ARCHITECTURE_COOLDOWN}s"
     if [ "$DRY_RUN" = true ]; then

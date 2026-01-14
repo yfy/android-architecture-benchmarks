@@ -1,0 +1,7 @@
+Architecture,Overall_Rank,Total_Normalized_Energy_mWh,Chat_Streaming_Rank,Chat_Streaming_Median_mWh,Shopping_Cart_Rank,Shopping_Cart_Median_mWh,Product_Browsing_Rank,Product_Browsing_Median_mWh
+hybrid,1,60.5412,1,20.5601,3,20.6028,2,19.3783
+mvp,2,60.706,2,20.6714,2,20.5083,3,19.5263
+classicmvvm,3,76.4506,4,21.269,6,28.1886,5,26.993
+mvi,4,79.3952,6,40.2243,1,20.0932,1,19.0777
+mvc,5,81.8412,3,21.0802,4,20.9544,6,39.8066
+singlestatemvvm,6,82.3132,5,27.9842,5,27.5918,4,26.7372

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="feature_chat_impl_chat_list_title">Messages</string>
+    <string name="feature_chat_impl_chat_list_title">Messages MVC</string>
     <string name="feature_chat_impl_chat_detail_title">Chat</string>
     <string name="feature_chat_impl_send_message">Send message</string>
     <string name="feature_chat_impl_type_message">Type a message...</string>
