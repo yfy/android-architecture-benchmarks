@@ -75,7 +75,7 @@ BaseArchitecture/
 - **Async**: Kotlin Coroutines + Flow
 - **Build**: Gradle 8.x with Version Catalog
 - **Min SDK**: 21
-- **Target SDK**: 36
+- **Target SDK**: 35
 - **Java Version**: 11
 
 ## 🎯 Three Implemented Features
@@ -221,13 +221,13 @@ The easiest way to run benchmarks across all architectures is using the automati
 ./scripts/run_benchmarks.sh --energy
 ```
 
-The script automatically handles architecture configuration, building, and running benchmarks. See [Architecture Configuration](#-architecture-configuration) section above for more details.
+The script automatically handles architecture configuration, building, and running benchmarks.
 
 #### Manual Execution
 
 If you prefer to run benchmarks manually:
 
-1. **Select Architecture**: Configure `app/build.gradle.kts` as described in the [Architecture Configuration](#-architecture-configuration) section
+1. **Select Architecture**: Configure `app/build.gradle.kts` as described in the Architecture Configuration section
 2. **Select Build Variant**: Ensure `mockRelease` is selected for all modules (especially the `app` module)
 3. **Run Benchmarks**: Execute `BenchmarkTestSuite` using Android Studio's test runner or via Gradle:
 
@@ -309,13 +309,13 @@ Complete statistical analysis results for all architectures. Detailed JSON files
 ## 📱 App Screenshots
 
 ### Product List Screen (Classic MVVM)
-![Product List](docs/screenshots/product_list.png)
+<img src="docs/screenshots/product_list.png" alt="Product List" width="300">
 
 ### Shopping Cart Screen (MVP)
-![Shopping Cart](docs/screenshots/shopping_cart.png)
+<img src="docs/screenshots/shopping_cart.png" alt="Shopping Cart" width="300">
 
 ### Messages Screen (Single-State MVVM)
-![Messages](docs/screenshots/messages.png)
+<img src="docs/screenshots/messages.png" alt="Messages" width="300">
 
 ## 🤝 Contributing
 
