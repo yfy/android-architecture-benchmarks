@@ -194,7 +194,7 @@ class MemoryUsageBenchmark {
                     captureMemory("08_ChatDetail_Initial")
 
                     // === PHASE 9: Message Stream (Memory Accumulation) ===
-                    println("\n--- Phase 9: Message Stream (15 seconds) ---")
+                    println("\n--- Phase 9: Message Stream ---")
                     Thread.sleep(15000) // Wait for ~30 messages (500ms interval)
                     captureMemory("09_ChatDetail_AfterStream")
 

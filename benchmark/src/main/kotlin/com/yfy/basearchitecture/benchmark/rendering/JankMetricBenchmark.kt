@@ -35,7 +35,7 @@ class JankMetricBenchmark {
     val benchmarkRule = MacrobenchmarkRule()
 
     /**
-     * Test 1: Continuous Smooth Scroll (30 seconds)
+     * Test 1: Continuous Smooth Scroll
      *
      * Measures jank during sustained scrolling
      * Simulates real user behavior: smooth continuous scrolling
@@ -63,7 +63,7 @@ class JankMetricBenchmark {
             println("TEST: Continuous Smooth Scroll (30s)")
             println("========================================")
 
-            val testDurationMs = 20000L // 30 seconds
+            val testDurationMs = 20000L
             val scrollIntervalMs = 100L
             val directionChangeIntervalMs = 10000L // Change direction every 10s
 
@@ -73,7 +73,7 @@ class JankMetricBenchmark {
             var direction = Direction.DOWN
             var lastDirectionChange = startTime
 
-            println("Starting continuous scroll for 30 seconds...")
+            println("Starting continuous scroll...")
 
             while (System.currentTimeMillis() < endTime) {
                 // Find product grid fresh (avoid stale reference)

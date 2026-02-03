@@ -30,7 +30,7 @@ class ChatStreamBenchmark {
      * 1. Navigate to Chat List from Product List
      * 2. Observe realtime updates (new messages every 3s, typing indicators every 5s)
      * 3. Scroll chat list up and down to stress render
-     * 4. Total: 15 seconds observation (5 update cycles)
+     * 4. Total: observation (5 update cycles)
      */
     @Test
     fun chatListRealtimeUpdates() {
@@ -66,7 +66,7 @@ class ChatStreamBenchmark {
             if (chatList != null) {
                 println("Found chat list: height=${chatList.visibleBounds.height()}")
 
-                // Observe for 15 seconds (5 cycles of 3s updates)
+                // Observe for 5 cycles of 3s updates
                 repeat(5) { cycle ->
                     println("Observation cycle ${cycle + 1}/5")
 
@@ -98,7 +98,7 @@ class ChatStreamBenchmark {
                     println("   Cycle ${cycle + 1} completed")
                 }
 
-                println("✅ Observed 5 update cycles (15 seconds total)")
+                println("✅ Observed 5 update cycles ")
             } else {
                 println("ERROR: Chat list not found!")
             }
@@ -128,10 +128,10 @@ class ChatStreamBenchmark {
      * 1. Navigate to Chat List
      * 2. Open first chat
      * 3. Wait for messages to stream (100 messages at 500ms interval = 50s total)
-     * 4. Observe for 10 seconds (20 messages)
+     * 4. Observe for 20 messages
      * 5. Go back to Chat List
      * 6. Open second chat
-     * 7. Observe messages for 10 seconds
+     * 7. Observe messages for a while
      * 8. Send 5 messages
      */
     @Test
@@ -175,8 +175,8 @@ class ChatStreamBenchmark {
             navigationCount++
             Thread.sleep(500) // Wait for chat to open
 
-            // Observe message stream for 10 seconds (20 messages)
-            println("Observing message stream (10 seconds)...")
+            // Observe message stream for 20 messages
+            println("Observing message stream...")
             repeat(20) { messageCount ->
                 Thread.sleep(500) // Each message arrives at 500ms
 
@@ -203,8 +203,8 @@ class ChatStreamBenchmark {
             navigationCount++
             Thread.sleep(500)
 
-            // Observe for another 10 seconds (20 more messages)
-            println("Observing second chat message stream (10 seconds)...")
+            // Observe for another 20 messages
+            println("Observing second chat message stream...")
             repeat(20) { messageCount ->
                 Thread.sleep(500)
 

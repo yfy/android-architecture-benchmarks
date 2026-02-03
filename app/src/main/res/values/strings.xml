@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BaseArchitecture</string>
+    <string name="app_name">Architecture Benchmark</string>
     <string name="domain">example.com</string>
     <string name="facebook_client_token">""</string>
     <string name="facebook_app_id">""</string>
