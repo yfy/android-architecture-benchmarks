@@ -4,6 +4,7 @@ import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.ApplicationProductFlavor
 import com.android.build.api.dsl.CommonExtension
 import com.android.build.api.dsl.ProductFlavor
+import com.android.build.gradle.internal.dsl.ProductFlavor as InternalProductFlavor
 
 @Suppress("EnumEntryName")
 enum class FlavorDimension {
@@ -16,13 +17,15 @@ enum class YfyFlavor(
     val applicationIdSuffix: String? = null,
     val dataSource: String,
     val baseUrl: String,
-    val databaseEnv: String? = null
+    val databaseEnv: String? = null,
+    val isDefaultFlavor: Boolean = false
 ) {
     mock(
         dimension = FlavorDimension.contentType,
         applicationIdSuffix = ".mock",
         dataSource = "mock",
-        baseUrl = "https://mock.local/"
+        baseUrl = "https://mock.local/",
+        isDefaultFlavor = true
     ),
     dev(
         dimension = FlavorDimension.contentType,
@@ -58,7 +61,10 @@ fun configureFlavors(
                             applicationIdSuffix = yfyFlavor.applicationIdSuffix
                         }
                     }
-                    
+                    if (yfyFlavor.isDefaultFlavor) {
+                        (this as? InternalProductFlavor)?.isDefault = true
+                    }
+
                     // Network configuration
                     this.buildConfigField("String", "DATA_SOURCE", "\"${yfyFlavor.dataSource}\"")
                     this.buildConfigField("String", "BASE_URL", "\"${yfyFlavor.baseUrl}\"")
